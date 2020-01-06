@@ -44,22 +44,22 @@ if (isset($_GET['booking'])) {
     
 
         
-        $booking    = "SELECT hour_start,hour_end FROM booking WHERE booking_date = '$date' AND hour_start = '$hour_start' AND hour_end = '$hour_end' OR (hour_start ='$hour_start_between1' OR hour_end = '$hour_start_between1' )
-                                        OR (hour_start ='$hour_start_between1' OR hour_end = '$hour_start_between2' )
-                                        OR (hour_start ='$hour_start_between1' OR hour_end = '$hour_start_between3' )
-                                        OR (hour_start ='$hour_start_between1' OR hour_end = '$hour_start_between4' )
-                                        OR (hour_start ='$hour_start_between2' OR hour_end = '$hour_start_between1' )
-                                        OR (hour_start ='$hour_start_between2' OR hour_end = '$hour_start_between2' )
-                                        OR (hour_start ='$hour_start_between2' OR hour_end = '$hour_start_between3' )
-                                        OR (hour_start ='$hour_start_between2' OR hour_end = '$hour_start_between4' )
-                                        OR (hour_start ='$hour_start_between3' OR hour_end = '$hour_start_between1' )
-                                        OR (hour_start ='$hour_start_between3' OR hour_end = '$hour_start_between2' )
-                                        OR (hour_start ='$hour_start_between3' OR hour_end = '$hour_start_between3' )
-                                        OR (hour_start ='$hour_start_between3' OR hour_end = '$hour_start_between4' )
-                                        OR (hour_start ='$hour_start_between4' OR hour_end = '$hour_start_between1' )
-                                        OR (hour_start ='$hour_start_between4' OR hour_end = '$hour_start_between2' )
-                                        OR (hour_start ='$hour_start_between4' OR hour_end = '$hour_start_between3' )
-                                        OR (hour_start ='$hour_start_between4' OR hour_end = '$hour_start_between4' )";
+        $booking    = "SELECT hour_start,hour_end FROM booking WHERE booking_date = '$date' AND (hour_start = '$hour_start' AND hour_end = '$hour_end' OR (hour_start ='$hour_start_between1' AND hour_end = '$hour_start_between1' )
+                                        OR (hour_start ='$hour_start_between1' AND hour_end = '$hour_start_between2' )
+                                        OR (hour_start ='$hour_start_between1' AND hour_end = '$hour_start_between3' )
+                                        OR (hour_start ='$hour_start_between1' AND hour_end = '$hour_start_between4' )
+                                        OR (hour_start ='$hour_start_between2' AND hour_end = '$hour_start_between1' )
+                                        OR (hour_start ='$hour_start_between2' AND hour_end = '$hour_start_between2' )
+                                        OR (hour_start ='$hour_start_between2' AND hour_end = '$hour_start_between3' )
+                                        OR (hour_start ='$hour_start_between2' AND hour_end = '$hour_start_between4' )
+                                        OR (hour_start ='$hour_start_between3' AND hour_end = '$hour_start_between1' )
+                                        OR (hour_start ='$hour_start_between3' AND hour_end = '$hour_start_between2' )
+                                        OR (hour_start ='$hour_start_between3' AND hour_end = '$hour_start_between3' )
+                                        OR (hour_start ='$hour_start_between3' AND hour_end = '$hour_start_between4' )
+                                        OR (hour_start ='$hour_start_between4' AND hour_end = '$hour_start_between1' )
+                                        OR (hour_start ='$hour_start_between4' AND hour_end = '$hour_start_between2' )
+                                        OR (hour_start ='$hour_start_between4' AND hour_end = '$hour_start_between3' )
+                                        OR (hour_start ='$hour_start_between4' AND hour_end = '$hour_start_between4' ))";
 
         $available  = mysqli_query($conn,$booking);
         $row5       = mysqli_fetch_assoc($available);
@@ -399,7 +399,7 @@ echo
                             <label class="mt" >Date</label>
                             <div  name="selcDate" class="input-group date form_datepicker" dataDate="" data-Date-format="yyyy-mm-dd" data-link-field="dtp_input2" data-link-format="yyyy-mm-dd">
                                 <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
-                                <input  class="form-control game_dt_field" size="16" type="text" value="" placeholder="Date" name="booking_date" onload="getDate()" required>
+                                <input  class="form-control game_dt_field" size="16" type="text" placeholder="Date" name="booking_date" required>
                                 <div class="games_reset_date">X</div>
                             </div>
                         </div>
