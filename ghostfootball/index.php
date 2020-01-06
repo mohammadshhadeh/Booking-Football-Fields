@@ -171,8 +171,8 @@ include_once('includes/public_header.php');
 		<div class="row" >
 
 			<div class="col-md-4 col-sm-12 col-xs-12 football_content" >
-				<div class="more_football_title_2019" >More Football.  Less Fuss.</div>
-				<div class="more_football_description_2019" >Ghost Football makes playing easier.</div>
+				<div class="more_football_title_2019" >More Football. More Fun</div>
+				<div class="more_football_description_2019" >Ghost Football makes life easier.</div>
 			</div>
 			<div class="col-md-8 col-sm-12 col-xs-12 football_tab" >
 				<div class="tabbable tabs-left">
@@ -235,7 +235,7 @@ include_once('includes/public_header.php');
       <div class="pane_content_header" ><span>INDIVIDUALS</span><br />Book a Pitch</div>
       <div class="pane_content_footer" >
        <div class="pane_content_footer_title" >Tired of calling around?</div>
-       <div class="pane_content_footer_desc" >Just need a pitch, plain and simple? Now you can book it online with Ghost Football with a few clicks.</div>
+       <div class="pane_content_footer_desc" >Just need a field, plan and simple? Now you can book online with Ghost Football.</div>
      </div>
    </div>
  </div>

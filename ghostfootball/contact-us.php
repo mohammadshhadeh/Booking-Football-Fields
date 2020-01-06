@@ -23,10 +23,10 @@ include_once('includes/public_header.php');
                 <div class="col-sm-12 col-xs-12 template-main">
                     <div class="col-xs-12 block-box">
                         <div class="col-sm-12 col-xs-12">
-                            <h4>TO BOOK A PITCH, ORGANIZE A GAME, OR FOR ANY OTHER ENQUIRIES, CONTACT US AT:</h4> 
+                            <h4>TLorem Ipsum comes from Lorem Ipsum comes from , CONTACT US AT:</h4> 
                             <p><i class="fa fa-envelope circle-ic" aria-hidden="true"></i> contact@Ghostfootball.com</p>
-                            <p><i class="fa fa-phone circle-ic" aria-hidden="true"></i> +65 9726 9110</p>
-                            <p><i class="fa fa-mobile circle-ic" aria-hidden="true"></i> +65 9726 9110</p>     
+                            <p><i class="fa fa-phone circle-ic" aria-hidden="true"></i> +455455555</p>
+                            <p><i class="fa fa-mobile circle-ic" aria-hidden="true"></i> +85532242</p>     
                         </div>
                     </div>
                     <div class="col-xs-12 block-box margin-top10">
