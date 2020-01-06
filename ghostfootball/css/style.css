@@ -1,0 +1,254 @@
+/* APP Section :: START */
+.home_app_section{ background-image: url(https://strangersoccer.com/images/home-app.jpg); background-repeat: no-repeat; background-position: center center; background-size: cover; float: left; width: 100%; }
+.home_app_section .layer_bg { background-color: rgba(0, 0, 0, 0.4); top: 0; left: 0; width: 100%; height: 100%; }
+.home_app_section .on_demand_description{ margin-top: 75px; margin-bottom: 75px; }
+.home_app_section .on_demand_description .ondemand_hello{ text-align: center; }
+.home_app_section .on_demand_description .on_demand_what{ text-align: center; }
+.home_app_section .store_icon{ display: inline-block; margin: 10px; padding: 10px; }
+.app_video_modal .video-container { position: relative; padding-bottom: 56.25%; padding-top: 30px; height: 0; overflow: hidden; }
+.app_video_modal .video-container iframe, .app_video_modal .video-container object, .app_video_modal .video-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+.download_app_mobile{ display: none; }
+.download_app_desktop{ display: block; display: inline-block; width: 40%; }
+.mobile_app_qr{ display: block; }
+.desktop_app_qr{ display: none; }
+
+@media only screen and (max-width: 768px) {
+    .download_app_mobile{ display: block; }
+    .download_app_desktop{ display: none; }
+    .mobile_app_qr{ display: block; }
+    .desktop_app_qr{ display: none; }
+}
+    
+@media only screen and (max-width: 420px) {
+    .app_ss_font{ font-size: 14px; font-weight: 700; }
+}
+    
+@media only screen and (max-width: 360px) {
+    .app_ss_font{ font-size: 12px; font-weight: 400; }
+}
+/* APP Section :: OVER */
+
+
+#video_bg {background-image:url(https://strangersoccer.com/slider/2573979212797video-img.jpg);}
+.home_slider, .home_video_btn {display: none;}
+.row-space30, .sec-btn {margin-bottom: 16px;}
+
+@media only screen and (min-width: 767px) {
+.col-sm-6, .col-xs-12, .col-md-4 {padding-left: 8px; padding-right: 8px;}
+}
+@media only screen and (max-width: 992px) {
+    .promo_top_contain .info_container .col-sm-6 { width:50%; }
+}
+@media only screen and (max-width: 768px) {
+    .promo_top_contain .info_container .col-sm-6 { width: 100%; float: left; }
+    .promo_top_contain .promo_action_btn { width: 100%; float: left; }
+}
+canvas {
+  display: block;
+  position: absolute;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.listbg {background-color: white;}
+section.listingMain .filterMain {background-color: white;}
+section.listingMain h1 {
+    font-family: "Akzidenz-Grotesk BQ Regular";
+    text-align: center;
+    font-size: 53px;
+    color: #58585a;
+    margin: 48px 0;
+}
+.gameThumb .caption h1 {
+    text-align: left;
+}
+
+.game_cat {margin:0px; font-size:16px;}
+.scroll_filter {z-index:0;}
+.sl-location {z-index:999999;}
+.margin_side0 {margin-left:0px; margin-right:0px;}
+.filterMain_more {display:block; padding-top:0px !important;}
+.filterMain_more .filterMain_more_nxt {padding-left:0px; height:36px;}
+.filter_wrap {margin-left:0px; margin-right:0px;}
+.games_eb {color:#ed1a3b;}
+.round_beside{ width:25% !important; min-height:55px !important; padding-left: 0px;  }
+.round_beside button{ width:100% !important; }
+.round_beside2{ width:75% !important; min-height:55px !important;  padding-left: 0px;}
+.round_beside2 label{ margin-bottom:0px !important; padding-bottom:0px !important; }
+.filterMain .gm-type .shortcut label {
+    height: 33px;
+    padding: 0;
+    text-align: center;
+    width: 33px;
+    line-height: 33px; margin-right: 5px;
+}
+
+.banner_description .banner_tab_main .caption_top2 {width: 90px; height: 90px; top: -4px; right: 11px; text-align: right; position: absolute;}
+.banner_description .banner_tab_main .caption_top2 .cat_ribbon {max-width: 100%; max-height: 100%; z-index: 1;}
+
+@media only screen and (max-width: 1030px) {
+    .banner_description .banner_tab_main .caption_top2 {right: 1px;}
+}
+
+@media (min-width: 992px){
+    .make_50 {width: 40%;}
+    .scroll_filter .container {background: #fff;}
+}
+
+@media only screen and (min-width: 768px) {
+    .banner_description .banner_tab_main .caption_top2 {right: 9px;width: 70px; height: 70px;}
+}
+
+@media only screen and (min-width: 767px) {
+section.listingMain .col-xs-12 {padding-left: 15px; padding-right: 15px;}
+
+}
+
+@media only screen and (max-width: 745px) {
+    .banner_description .banner_tab_main .caption_top2 {right: 7px;}
+}
+
+@media only screen and (max-width: 640px) {
+    .banner_description .banner_tab_main .caption_top2 {right: 6px;}
+}
+
+@media only screen and (max-width: 620px) {
+    .banner_description .banner_tab_main .caption_top2 {right: 2px;}
+}
+
+@media only screen and (max-width: 580px) {
+    .banner_description .banner_tab_main .caption_top2 {right: -6px;}
+}
+
+@media only screen and (max-width: 560px) {
+    .banner_description .banner_tab_main .caption_top2 {right: 1px; height: 60px; width: 60px;}
+}
+
+@media only screen and (max-width: 480px) {
+    .banner_description .banner_tab_main .caption_top2 {right: 2px; top: -3px; height: 50px; width: 50px;}
+}
+
+@media only screen and (max-width: 420px) {
+    .banner_description .banner_tab_main .caption_top2 {right: 2px; top: -3px; height: 45px; width: 45px;}
+}
+
+@media only screen and (max-width: 410px) {
+    .banner_description .banner_tab_main .caption_top2 {right: 1px; top:-3px;}
+}
+
+@media only screen and (max-width: 380px) {
+    .banner_description .banner_tab_main .caption_top2 {right: 3px; height: 40px; width: 40px; top: -2px;}
+
+}
+
+@media only screen and (max-width: 360px) {
+    .banner_description .banner_tab_main .caption_top2 {right: 3px; height: 40px; width: 40px; top: -2px;}
+}
+
+@media only screen and (max-width: 992px) {
+    .make_50 {width: 40%;}
+    .scroll_filter .container {background: #fff;}
+}
+
+@media only screen and (max-width: 767px) {
+    .filterMain_game .make_50 {width: 100%;}
+    section.listingMain h1 {    margin: 50px 0 40px; font-size: 30px;}
+}
+@media only screen and (max-width: 580px) {
+    .round_beside{ width:20% !important; }
+    .round_beside button{ width:100% !important; }
+    .round_beside2{ width:80% !important; padding-left:10px;}
+
+}
+
+@media only screen and (max-width: 560px) {
+  /*.sl-location:first-child {z-index:9999999999999;}
+  .sl-location:second-child {z-index:999999;}*/
+}
+
+@media only screen and (max-width: 460px) {
+    .round_beside button{ width:100% !important; }
+    .round_beside2 label{ height:30px !important; width:30px !important; line-height:30px !important; font-size:14px !important; }
+    .filterMain .gm-type .shortcut label {
+    margin-right: 0px; margin-top: 2px;
+    }
+
+}
+
+@media only screen and (max-width: 400px) {
+    .round_beside button{ width:100% !important; font-size:16px; }
+    .round_beside2 label{ height:30px !important; width:30px !important; line-height:30px !important; font-size:14px !important; }
+    section.listingMain .filterMain {padding-left: 15px; padding-right: 15px;}
+    .round_beside {width: 20% !important;}
+    .scroll_filter .container {padding: 5px; padding-bottom: 4px; padding-top: 6px;}
+
+}
+
+@media only screen and (max-width: 360px) {
+    .round_beside button{ width:100% !important; font-size:12px; }
+    .round_beside2 label{ height:28px !important; width:28px !important; line-height:28px !important; font-size:14px !important; }
+    .round_beside {width: 18% !important;}
+    .scroll_filter .container #adv_filter_btn_sticky { padding: 5px 12px; font-size: 14px;}
+    section.listingMain .filterMain {padding-left: 5px; padding-right: 5px; padding-bottom: 0px;}
+}
+
+.wc18_banner{ background: #e7e8e9 !important; background-image: url(https://strangersoccer.com/images/wc18-banner2.png) !important; background-repeat: no-repeat !important; background-position: top !important; background-size: cover !important; top: -115px; }
+.wc18_banner h1{ font-family: 'Akzidenz-Grotesk BQ Bold'; padding-top: 5%; }
+.wc18_banner h2{ font-family: 'Akzidenz-Grotesk BQ Bold'; font-size: 18px !important; margin-top: 5px !important; margin-bottom: 0px !important; padding-bottom: 2%; }
+.match_country{ width: 84px; height: 84px; border-radius: 50%; border: 2px solid #a7a9ac; }
+.lh40{ line-height: 84px; font-size: 21px; font-family: 'Akzidenz-Grotesk BQ Bold'; }
+.draw_link{ padding-bottom: 3%; }
+.draw_link a{ font-family: 'Akzidenz-Grotesk BQ Bold'; color: #FFF; background: #ed1a3b; border: 1px solid #ed1a3b; /*color: #6c6c6c; border: 1px solid #6c6c6c; background: #FFF;*/ border-radius: 5px; padding: 7px 14px;  }
+.draw_link a.active{ color: #FFF; background: #ed1a3b; border: 1px solid #ed1a3b; }
+.prediction_main{ margin: 75px 0 -75px 0 !important; }
+
+@media only screen and (max-width: 992px) {
+    .wc18_banner h1{ padding-top: 10%; }
+}
+
+@media only screen and (max-width: 640px) {
+    .wc18_banner h1{ padding-top: 15%; }
+}
+
+
+    /* The snackbar - position it at the bottom and in the middle of the screen */
+    #PopupSnackbar {
+        visibility: hidden; /* Hidden by default. Visible on click */
+        min-width: 250px; /* Set a default minimum width */
+        margin-left: -125px; /* Divide value of min-width by 2 */
+        background-color: #e7e8e9; /* Black background color */
+        color: #000000; /* White text color */
+        text-align: center; /* Centered text */
+        border-radius: 20px; /* Rounded borders */
+        padding: 15px; /* Padding */
+        position: fixed; /* Sit on top of the screen */
+        z-index: 1; /* Add a z-index if needed */
+        left: 50%; /* Center the snackbar */
+        bottom: 30px; /* 30px from bottom */
+        z-index: 99999999;
+    }
+
+    /* Show the snackbar when clicking on a button (class added with JavaScript) */
+    #PopupSnackbar.show {
+        visibility: visible; /* Show the snackbar */
+        /* Add animation: Take 0.5 seconds to fade in and out the snackbar. 
+        However, delay the fade out process for 2.5 seconds */
+        -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+        animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    }
+    .pCnt_marketing_popup {
+        overflow-y: auto!important;
+        overflow-x: hidden;
+        position: fixed;
+        left: 50%;
+        width: 90%;
+        top: 10%;
+        max-width: 450px;
+        box-shadow: 0 0 5px rgba(0,0,0,.5);
+        background: #f8f5f1;
+        z-index: 111111999;
+        transform: translate(-50%,0%);
+        height: auto;
+    }
+
+

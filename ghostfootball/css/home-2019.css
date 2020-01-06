@@ -1,0 +1,255 @@
+/* Home Banner :: START */
+.top_shadow { box-shadow: 0 -5px 5px -5px #d4d4d4; }
+.right_shadow {	box-shadow: -5px 0 5px -5px #d4d4d4; }
+.bottom_shadow { box-shadow: 0 5px 5px -5px #d4d4d4; }
+.left_shadow { box-shadow: 5px 0 5px -5px #d4d4d4; }
+.all_shadow { box-shadow: 0 0 5px #d4d4d4; }
+
+#whatsapp_sticky_stop{ background: #f4f4f4; }
+
+section.banner-video{ /*height: auto;*/ height: 475px; }
+.banner-video .banner-video-new{ height: 350px; }
+.banner_details{ padding-top: 140px; }
+.banner_details .banner_hello{ font-family:"Lato Regular"; font-style: normal; font-weight: normal; font-size: 36px; line-height: 43px; letter-spacing: 0.1em; text-transform: uppercase; color: #FFFFFF; }
+.banner_details .banner_hello span{ font-family:"Lato Bold"; }
+.banner_details .banner_what{ font-family:"Lato Regular"; font-style: normal; font-weight: normal; font-size: 18px; line-height: 22px;  letter-spacing: 0.1em; text-transform: uppercase; color: #FFFFFF; }
+
+.banner_icons{ padding-top: 80px; }
+.banner_icons .icon_main_title{ font-family: "Lato Regular"; font-style: normal; font-weight: normal; font-size: 14px; line-height: 17px; text-align: center; letter-spacing: 0.2em; text-transform: uppercase; color: #58585A; padding: 15px 0px; }
+.banner_bottom_icon .icon_main_title{ padding: 0px 0px 15px 0px; }
+.banner_top_icon .icon_tab{ width:25%; float: left; padding: 10px; margin-bottom: 10px; }
+
+.banner_top_icon .icon_tab.w3{ width:33%; float: left; padding: 10px; margin-bottom: 10px; }
+.banner_top_icon .icon_tab.w2{ width:50%; float: left; padding: 10px; margin-bottom: 10px; }
+.banner_top_icon .icon_tab.w1{ width:100%; float: left; padding: 10px; margin-bottom: 10px; }
+
+.banner_bottom_icon .icon_tab{ width:50%; float: left; padding: 10px 0px; margin-bottom: 10px; }
+.banner_icons .icon_tab:hover{ background: #ebebeb !important; border-radius: 4px; }
+.banner_icons .icon_tab .icon_img{ text-align: center; margin-bottom: 10px; }
+.banner_icons .icon_tab .icon_img img{ width: 66px; height: 66px; }
+.banner_icons .icon_tab .icon_label{ font-family: "Lato Regular"; font-style: normal; font-weight: normal; font-size: 16px; line-height: 19px; text-align: center; color: #58585A; min-height: 40px; }
+
+.banner_icons .banner_top_icon{ background: #FFFFFF; box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); border-radius: 8px; z-index: 999; }
+.banner_icons .banner_bottom_icon{ background: #FFFFFF; box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); border-radius: 0px 0px 8px 8px; }
+/* Home Banner :: OVER */
+
+
+/* Home About Section :: START */
+.about-ss-sectoin-2019{ background: #f4f4f4; padding-top: 90px; padding-bottom: 35px; float: left; width: 100%; }
+.about-ss-sectoin-2019 .about_ss_title_2019{ font-family: "Lato Regular"; font-style: normal; font-weight: normal; font-size: 24px; line-height: 29px; letter-spacing: 0.1em; text-transform: uppercase; color: #ED1A3B; }
+.about-ss-sectoin-2019 .about_ss_description_2019{ font-family: "Lato Regular"; font-style: normal; font-weight: normal; font-size: 14px; line-height: 20px; color: #58585A; padding-left:15px; padding-right:15px; }
+.about-ss-sectoin-2019 .about_ss_image_2019{ padding-left:15px; padding-right:15px; }
+.about-ss-sectoin-2019 .about_ss_image_2019 img{ border-radius: 12px; }
+/* Home About Section :: OVER */
+
+
+/* Home Football Section :: START */
+.more-football-sectoin-2019{ background: #f4f4f4; padding-top: 35px; padding-bottom: 35px; float: left; width: 100%; }
+.more-football-sectoin-2019 .more_football_title_2019{ font-family: "Lato Regular"; font-style: normal; font-weight: normal; font-size: 24px; line-height: 29px; letter-spacing: 0.1em; text-transform: uppercase; color: #ED1A3B; }
+.more-football-sectoin-2019 .more_football_description_2019{ font-family: "Lato Regular"; font-style: normal; font-weight: normal; font-size: 14px; line-height: 20px; color: #58585A; padding-top: 30px; }
+.more-football-sectoin-2019 .football_tab{ padding-left:15px; padding-right: 15px; }
+.more-football-sectoin-2019 .football_content{ padding-left:15px; padding-right: 15px; margin-top: 15%; }
+
+/*.more-football-sectoin-2019 .nav-tabs{ width:60px; float: left; }
+
+.more-football-sectoin-2019 .nav-tabs>li{ width: 70px; height: 45px; text-align: center; border:none; margin: 0 0 0 5px; padding: 0px; }
+.more-football-sectoin-2019 .nav-tabs>li a{ background: #EBEBEB; margin: 0px; padding: 0px; }
+.more-football-sectoin-2019 .nav-tabs>li img{ width: 40px; height: 45px; padding-top: 5px; }
+.more-football-sectoin-2019 .nav-tabs>li.active{ width: 75px; background: #FFFFFF; border: none; margin: 0px; box-shadow: -5px 0 5px 0px rgba(0, 0, 0, 0.15); }
+.more-football-sectoin-2019 .nav-tabs>li.active>a{ width: 75px; background: #FFFFFF; border: none; margin: 0px; box-shadow: -5px 0 5px 0px rgba(0, 0, 0, 0.15); }
+
+.more-football-sectoin-2019 .football_tab .tab-content{ float: left; width: 87%; margin-left: 15px; background: #FFF; border-radius: 12px; padding-left: 25px; }*/
+
+.tab-content .tab-pane{ background: #FFFFFF; border-radius: 12px; margin-left: 60px; min-height: 400px; }
+.tab-content .tab-pane .pane_content{ width: 100%; position: relative; }
+.tab-content .tab-pane .pane_content_left{ width: 5%; float: left; background: #FFF; border-radius: 12px; }
+.tab-content .tab-pane .pane_content_right{ width: 95%; float: right; background-repeat: no-repeat; background-position: center center; background-size: cover; border-radius: 0 12px 12px 0; min-height: 400px; }
+.tab-content .tab-pane .pane_content_right .pane_content_header{ background: #ED1A3B; font-family: "Lato Bold"; font-style: normal; font-weight: normal; font-size: 24px; line-height: 29px; letter-spacing: 0.1em; text-transform: uppercase; color: #FFFFFF; position: absolute; left: 3%; width: auto; margin-top: 5%; padding: 10px 10px 10px 12px; }
+.tab-content .tab-pane .pane_content_right .pane_content_header span{ font-size: 18px; }
+.tab-content .tab-pane .pane_content_right .pane_content_footer{ background: #000; position: absolute; left: 3%; width: 80%; margin-top: 38%; padding: 25px 25px 25px 12px; }
+.tab-content .tab-pane .pane_content_right .pane_content_footer .pane_content_footer_title{ font-family: "Lato Bold"; font-style: normal; font-weight: normal; font-size: 18px; line-height: 22px; text-transform: uppercase; color: #FFFFFF; padding-bottom: 15px; }
+.tab-content .tab-pane .pane_content_right .pane_content_footer .pane_content_footer_desc{ font-family: "Lato Regular"; font-style: normal; font-weight: normal; font-size: 14px; line-height: 20px; color: #FFFFFF; min-height: 60px; }
+
+.tabs-left > .nav-tabs { border-bottom: 0; margin-top: 25px; }
+.tab-content > .tab-pane, .pill-content > .pill-pane { display: none; }
+.tab-content > .active, .pill-content > .active { display: block; }
+.tabs-left > .nav-tabs > li{ float: none; width: 50px; height: 42px; text-align: center; margin-left: 10px; background: #ebebeb; cursor: pointer; }
+.tabs-left > .nav-tabs > li.martop5{ margin-top: 10px; }
+.tabs-left > .nav-tabs > li.marbtm5{ margin-bottom: 10px; }
+.tabs-left > .nav-tabs > li.active{ width: 60px; height: 45px; text-align: center; margin-left: 0px; }
+.tabs-left > .nav-tabs > li > a { margin: 0px; padding: 5px; cursor: pointer; }
+.tabs-left > .nav-tabs > li.active > a { margin: 0px; padding: 5px; }
+.tabs-left > .nav-tabs { float: left; /*border-right: 1px solid #ddd;*/ }
+.tabs-left > .nav-tabs > li > a { margin-right: -1px; -moz-border-radius: 4px 0 0 4px; border-radius: 4px 0 0 4px; }
+.tabs-left > .nav-tabs > li > a img{ width:32px; height: 32px; }
+.tabs-left > .nav-tabs > li > a:hover,
+.tabs-left > .nav-tabs > li > a:focus { /*border-color: #eeeeee #dddddd #eeeeee #eeeeee;*/ border:none; }
+.tabs-left > .nav-tabs .active > a,
+.tabs-left > .nav-tabs .active > a:hover,
+.tabs-left > .nav-tabs .active > a:focus { border-color: #ddd transparent #ddd #ddd; *border-right-color: #ffffff; }
+
+/*CSS to set tab on top :: START */
+.tabs-left > .nav-tabs{ float: none; margin-left: 20px; }
+.tabs-left > .nav-tabs > li.martop5{ margin-top: 0px; margin-left: 10px; }
+.tabs-left > .nav-tabs > li{ float: left; margin-left: 0px; height: 47px; width: 57px; background: none; }	
+.tabs-left > .nav-tabs > li.active{ height: 47px; width: 57px; border-bottom: 0px; background-color: #FFF; }	
+.tabs-left > .nav-tabs .active > a{ border-top:1px solid #ddd; border-left:1px solid #ddd; border-right:1px solid #ddd; border-bottom: none; border-radius: 0; background-color: #FFF; }
+.tabs-left > .nav-tabs > li.active > a{ padding: 5px; border-bottom: 0px; }
+.tabs-left > .nav-tabs > li > a{ padding: 5px 5px 2px 5px; margin-top: 5px; background: #ebebeb; }
+.more-football-sectoin-2019 .football_tab{ padding-left: 0px; padding-right: 0px; }	
+.tab-content .tab-pane{ margin-left: 0px; border-radius: 0px; }
+.tab-content .tab-pane .pane_content{ padding-top: 30px; }
+.tab-content .tab-pane .pane_content_left{ display: none; }
+.tab-content .tab-pane .pane_content_right{ border-radius: 0px; width: 100%; } 
+.tab-content .tab-pane .pane_content_right .pane_content_header{ margin-top: -15px; }
+.tab-content .tab-pane .pane_content_right .pane_content_footer{ margin-top: 45%; width: 94%; }
+/*CSS to set tab on top :: OVER */
+/* Home Football Section :: OVER */
+
+/* Testimonial Section :: START */
+.testi-section{ background: #f4f4f4; padding-top: 60px; padding-bottom: 60px; }
+.testi-section .teti_title{ font-family: "Lato Regular"; font-style: normal; font-weight: normal; font-size: 24px; line-height: 29px; text-align: center; letter-spacing: 0.1em; text-transform: uppercase; color: #ED1A3B; padding-bottom: 20px; }
+.testi-section .teti_desc .testi_item .player_name{ font-family: "Lato Bold"; font-weight: normal; }
+.testi-section .teti_desc .testi_item .player_desc{ font-family: "Lato Regular"; font-size:14px; }
+/* Testimonial Section :: OVER */
+
+
+/* Promotion Section :: START */
+.promo-section{ background: #f4f4f4; padding-top: 90px; padding-bottom: 30px; }
+.promo-section .promo_desc .promo_item{ background: #FFF; border-radius: 12px; }
+.promo-section .promo_title{ font-family: "Lato Regular"; font-style: normal; font-weight: normal; font-size: 24px; line-height: 29px; text-align: center; letter-spacing: 0.1em; text-transform: uppercase; color: #ED1A3B; padding-bottom: 20px; }
+.promo-section .promo_desc .promo_item .desc_section .promo_desc_title{ font-family: "Lato Bold"; font-style: normal; font-weight: normal; font-size: 16px; line-height: 19px; color: #666666; }
+.promo-section .promo_desc .promo_item .desc_section .promo_description{ font-family: "Lato Regular"; font-style: normal; font-weight: normal; font-size: 14px; line-height: 20px; color: #666666; }
+.promo-section .promo_desc .promo_item .button_section{ padding: 15px; }
+.promo-section .promo_desc .promo_item .button_section .button_orange{ font-family: "Lato Regular"; font-style: normal; font-weight: normal; font-size: 16px; line-height: 19px; text-align: center; color: #FFFFFF; border-radius: 4px; background: #F99E1A; padding: 10px; }
+/* Promotion Section :: OVER */
+
+/* Home App Section :: START */
+.home_app_section{ background-image: url(../images/home-app-container.jpg); }
+.home_app_section .on_demand_description .ondemand_hello{ font-family: "Lato Bold"; font-style: normal; font-weight: normal; font-size: 24px; line-height: 29px; text-align: center; letter-spacing: 0.1em; text-transform: uppercase; color: #FFFFFF; padding: 0px; }
+.home_app_section .on_demand_description .on_demand_what{ font-family: "Lato Regular"; font-style: normal; font-weight: normal; font-size: 18px; line-height: 22px; text-align: center; color: #FFFFFF; padding: 0px; }
+/* Home App Section :: OVER */
+
+.chat_section_fixed_testi{ background-color: rgba(0, 0, 0, 0.4); /*background: #f4f4f4; padding-top: 60px;*/ }
+
+@media only screen and (max-width: 1030px) {
+	.tab-content .tab-pane .pane_content_right .pane_content_footer{ margin-top: 62%; }
+}
+
+@media only screen and (max-width: 992px) {
+	section.banner-video { height: 675px; }
+	.more-football-sectoin-2019{ padding-bottom: 70px; }
+	.more-football-sectoin-2019 .football_content{ margin-top: 0px; margin-bottom: 35px; }
+	.promo-section{ padding-top:90px; }
+	
+	.more-football-sectoin-2019 .football_content{ padding-left:15px; padding-right: 15px; margin-top: 0px; margin-bottom: 35px; }
+	
+}
+
+@media only screen and (max-width: 991px) {
+	.tab-content .tab-pane .pane_content_right .pane_content_footer{ margin-top: 42%; }
+}
+
+@media only screen and (max-width: 768px) {
+	.banner_details{ padding-top: 90px; }
+	.banner_details .banner_hello{ text-align: center;  }
+	.banner_details .banner_what{ text-align: center;  }
+	.about-ss-sectoin-2019{ padding-top: 90px; }
+	.more-football-sectoin-2019{ padding-bottom: 90px; }
+	.promo-section{ padding-top: 60px; }
+	
+	.tab-content .tab-pane .pane_content_right .pane_content_footer{ margin-top: 45%; }
+	
+	section.banner-video{ height: 625px; }
+}
+
+@media only screen and (max-width: 680px) {
+	.tab-content .tab-pane .pane_content_right .pane_content_footer{ margin-top: 48%; }
+}
+
+@media only screen and (max-width: 640px) {
+	.tab-content .tab-pane .pane_content_right .pane_content_footer{ margin-top: 53%; }
+}
+
+@media only screen and (max-width: 620px) {
+	.home_app_section .on_demand_description .ondemand_hello{ font-size: 18px; }
+	.home_app_section .on_demand_description .on_demand_what{ font-size: 16px; }
+}
+
+@media only screen and (max-width: 560px) {
+	.tab-content .tab-pane .pane_content_right .pane_content_footer{ margin-top: 59%; }
+
+	.tabs-left > .nav-tabs > li{ width: 42px; height: 42px; }
+	.tabs-left > .nav-tabs > li.active{ width: 42px; height: 45px; }
+	.tabs-left > .nav-tabs > li.active > a{ padding: 5px 5px 12px 5px; }
+	.tabs-left > .nav-tabs > li > a{ padding: 5px; }
+	.tabs-left > .nav-tabs > li > a img{ width: 26px; height: 26px; }
+}
+
+@media only screen and (max-width: 520px) {
+	.tab-content .tab-pane .pane_content_right .pane_content_footer{ margin-top: 62%; }
+}
+
+@media only screen and (max-width: 480px) {
+	.banner_details .banner_hello{ font-size: 24px; line-height: 29px; }
+	.banner_details .banner_what{ font-size: 16px; line-height: 19px; }
+	
+	.banner_icons{ padding-left:0px; padding-right: 0px; }
+	.banner_icons .banner_bottom_icon{ padding-left:0px; padding-right: 0px; }
+	.banner_icons .banner_bottom_icon .col-md-6{ padding-left:5px; padding-right: 5px; }
+	.banner_icons .banner_bottom_icon_main{ padding-left: 10px; padding-right: 10px; }
+	.banner_icons .banner_top_icon{ padding-left:0px; padding-right: 0px; }	
+	.banner_icons .icon_tab .icon_img img{ width: 42px; height: 42px; }
+	.banner_icons .icon_tab .icon_label{ font-size: 14px; line-height: 17px; word-wrap: break-word; }
+	
+	.tab-content .tab-pane .pane_content_right .pane_content_footer{ margin-top: 63%; }
+
+	.banner_details .banner_hello{ font-size: 21px; line-height: 26px; }
+	.banner_details .banner_what{ font-size: 14px; line-height: 17px; }
+	
+	.tab-content .tab-pane .pane_content_right .pane_content_footer{ margin-top: 67%; }	
+	
+	.about-ss-sectoin-2019{ padding-top: 30px; }
+	.tab-content .tab-pane .pane_content_right .pane_content_header span{ font-size: 14px; }
+	.tab-content .tab-pane .pane_content_right .pane_content_header{ font-size:18px; }
+}
+
+@media only screen and (max-width: 420px) {
+	.tabs-left > .nav-tabs{ margin-left: 10px; }
+	.tabs-left > .nav-tabs > li.martop5{ margin-left: 5px; }
+	.tabs-left > .nav-tabs > li{ width: 36px; height: 36px; }
+	.tabs-left > .nav-tabs > li.active{ width: 36px; height: 40px; }
+	.tabs-left > .nav-tabs > li.active > a{ padding: 5px 5px 12px 5px; }
+	.tabs-left > .nav-tabs > li > a{ padding: 5px; }
+	.tabs-left > .nav-tabs > li > a img{ width: 21px; height: 21px; }
+	.tab-content .tab-pane .pane_content_right .pane_content_footer{ margin-top: 75%; }
+	
+	.banner_top_icon .icon_tab{ padding: 10px 5px; }
+	.banner_icons .icon_tab .icon_img img{ width: 42px; height: 42px; }
+	.banner_icons .icon_tab .icon_label{ font-size: 12px; line-height: 15px; }	
+
+	.home_app_section .on_demand_description .ondemand_hello{ font-size: 14px; }
+	.home_app_section .on_demand_description .on_demand_what{ font-size: 13px; }
+	
+	
+	.banner-video-new .container{ padding-left: 10px; padding-right: 10px; }
+	.banner_icons .banner_bottom_icon_main{ padding-left: 10px; padding-right: 10px; }
+	
+}
+
+@media only screen and (max-width: 380px) {
+	.banner_details .banner_what{ font-size: 12px; line-height: 15px; }
+	
+		
+	.tab-content .tab-pane .pane_content_right .pane_content_footer{ margin-top: 83%; }
+}
+
+@media only screen and (max-width: 360px) {
+	.banner_details .banner_what{ font-size: 12px; line-height: 15px; }
+	.banner_icons .icon_tab .icon_img img{ width: 42px; height: 42px; }
+	.banner_icons .icon_tab .icon_label{ font-size: 12px; line-height: 15px; }	
+	
+	.tab-content .tab-pane .pane_content_right .pane_content_footer{ margin-top: 88%; }
+	
+	.banner_top_icon .icon_tab{ padding: 10px 1px; }
+}

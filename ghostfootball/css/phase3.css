@@ -1,0 +1,348 @@
+.marright0{ margin-right:0px !important; }
+.marleft0{ margin-left:0px !important; }
+.padright0{ padding-right:0px; }
+.padright20px{ padding-right:20px; }
+.padleft0{ padding-left:0px; }
+.padbottom0{ padding-bottom:0px !important; }
+.width7{ width:7%; }
+.marbtm10{ margin-bottom:10px !important; }
+.margin-bottom-20{ margin-bottom:20px; }
+.margin-bottom-50{ margin-bottom:50px; }
+.margin-bottom-40{ margin-bottom:40px; }
+.margin-bottom-30{ margin-bottom:30px; }
+.margin-top--30{ margin-top:-30px; }
+.margin-top-40{ margin-top:40px; }
+.margin-top-20{ margin-top:20px !important; }
+.padtop15{ padding-top:15%; }
+.padtop15px{ padding-top:15px; }
+.padtop5{ padding-top:5%; }
+.padtop35{ padding-top:35% !important; }
+.padtop5px{ padding-top:5px; }
+.margin9{ margin-top:9%; }
+.margintop10per{ margin-top:10%; }
+.margintop13per{ margin-top:13% !important; }
+.padleft60{ padding-left:60px; }
+.padleft65{ padding-left:65px; }
+.padleft5{ padding-left:5px; }
+.padright60{ padding-right:60px; }
+.padright65{ padding-right:65px; }
+.padright25{ padding-right:25%; }
+.mar25_0{ margin:25px 0; }
+.padtop70{ padding-top:70px; }
+.padtop50{ padding-top:50px; }
+.padbottm50{ padding-bottom:50px; }
+.padbottm35{ padding-bottom:35px; }
+.padbottm40{ padding-bottom:40px; }
+.padbottm45{ padding-bottom:45px; }
+.margin-top-0{ margin-top:0px !important; }
+.lineheight45{ line-height:45px; }
+.filter_pag .width60{ width:60px !important; }
+.filter_pag .height40{ height:40px !important; }
+.height50{ height:50px; }
+.padleft5per{ padding-left:5%; }
+.padright5per{ padding-right:5%; }
+
+section.banner-video .chevron_web_host::after, section.banner-video .chevron_web_host::before{ background:#FFF !important; }
+
+.why-today-game{ padding:70px 0 !important; }
+.why-today-game.padtop0{ padding-top:0px !important; }
+.why-sec-title h2{ color:#58585a; font-size: 24px; font-weight: normal; }
+.why-sec-title p{ color:#58585a; font-size: 16px; font-weight: normal; }
+.marleft4{ margin-left:5%; }
+
+.be-endorsed-mobile{ display:none; }
+.be-endorsed h2{ color:#58585a; font-size: 24px; font-weight: normal; }
+.be-endorsed p{ color:#58585a; font-size: 16px; font-weight: normal; }
+.be-endorsed .padtop6{ padding-top:6%; }
+
+section.become-host-why{ background: rgba(0, 0, 0, 0) url("../images/be-endorsed-man-bg.jpg") no-repeat scroll center center / cover; float: left; padding: 0; width: 100%; }
+
+section.become-host-why .lft-cnt{ margin-top: 90px; }
+section.become-host-why .lft-cnt h2{ font-size:32px; }
+section.become-host-why .btn-white{ margin-top:20px; }
+
+section.be-endorsed { background: rgb(231, 232, 234) url("../images/be-endorsed.png") no-repeat scroll center center / cover; float: left; padding: 0; width: 100%; min-height:300px; }
+
+.endorsed_count .left-count{ border: 1px solid #ed1a3b; border-radius: 50%; color: #ed1a3b; float: left; font-size: 37px; height: 60px; line-height: 60px;text-align: center; width: 60px; margin-top:-15px; }
+.endorsed_count .fill{ background: #ed1a3b none repeat scroll 0 0; color: #fff; }
+.fontsize16{ font-size:16px; }
+.height60{ height:60px; vertical-align:middle; }
+
+
+.hosting_guide_best h2{ text-align:left; padding-top:25px; }
+.grey-count { border: 1px solid #b4b4b4; border-radius: 50%; float: left; font-size: 24px; height: 36px; line-height: 36px;text-align: center; width: 36px; background: #b4b4b4 none repeat scroll 0 0; color: #fff; }
+
+section.hosting-1 { background: rgb(231, 232, 234) url("../images/hosting-guide-1.png") no-repeat scroll center center / cover; float: left; padding: 0; width: 100%; min-height:375px; }
+section.hosting-2 { background: rgb(231, 232, 234) url("../images/hosting-guide-2.png") no-repeat scroll center center / cover; float: left; padding: 0; width: 100%; min-height:375px; }
+
+.hosting-1 .padtop6{ padding-top:3%; }
+.hosting-2 .padtop6{ padding-top:3%; }
+
+.hosting-1 h2{ font-size:31px; font-weight:bold; color:#ed1e3e; padding-bottom:20px; }
+.hosting-1 p{  }
+
+.hosting-2 h2{ font-size:31px; font-weight:bold; color:#ed1e3e; padding-bottom:20px; }
+.hosting-2 p{ }
+
+.hosting-testimonial{ background: rgba(0, 0, 0, 0) url("../images/hosting-guide-red.jpg") no-repeat scroll center center / cover !important; float: left; padding: 0; width: 100%; min-height:560px; margin-top:0px !important; }
+section.hosting-testimonial .chevron_web_host::after, section.hosting-testimonial .chevron_web_host::before{ background:#FFF !important; }
+section.hosting-testimonial .lft-cnt h2 {font-size: 32px; color:#FFF; font-family: "Akzidenz-Grotesk BQ Bold"; }
+section.hosting-testimonial .lft-cnt p { font-size: 20px; color:#FFF; text-align: center; font-family: "Akzidenz-Grotesk BQ Regular"; }
+section.hosting-testimonial .lft-cnt button{ background: #fff none repeat scroll 0 0; border: medium none; border-radius: 3px; color: #58585a; font-size: 20px; margin-top: 45px; padding: 12px; width: 350px; }
+
+.btn-red{ background: #ed1a3b none repeat scroll 0 0 !important; border: medium none; border-radius: 3px; color: #fff; font-size: 20px; margin-top: 45px; padding: 12px; width: 350px; }
+
+/*.team_banner h2:after{ content:""; position:absolute; width:2%; border-bottom:2px solid #FFF; height:60px; left:50%; }*/
+.profile-btn-red{ border:2px solid #ef1235; background:rgba(185,44,41,0.8); color:#FFF; font-family: "Akzidenz-Grotesk BQ Bold"; font-size:17px; text-align:center; min-width:190px; min-height:60px; }
+.profile-btn-grey{ border:2px solid #ffffff; background:rgba(195,201,179,0.8); color:#FFF; font-family: "Akzidenz-Grotesk BQ Bold"; font-size:18px; text-align:center; min-width:190px; min-height:60px; }
+
+.team_banner_logo{ height:200px !important; width:200px !important; display:inline; }
+.team_banner_link{ position:absolute; bottom:10%; left:58%; }
+.team_banner_edit{ height:30px !important; width:30px !important; vertical-align:top; }
+.team_banner_title{ font-weight:bold; font-size:32px; }
+.team_banner_title_img{ height:30px; width:30px; vertical-align:top; }
+.team_banner_text h2{ font-weight:bold; font-size:32px; line-height:30px; }
+
+.team_banner_text img{ height:30px !important; width:30px !important; vertical-align:top; }
+.team_banner_button{}
+
+.team_profile_banner2{ height:300px; }
+.team_profile_banner2 .banner-content{ background:#e7e8e9 !important; }
+.team_profile_banner2 .banner-content h3{ color:#ef1235; font-size: 26px; font-family: "Akzidenz-Grotesk BQ Bold"; }
+.team_profile_banner2 .banner-content h2{ color:#000; font-size: 23px; font-family: "Akzidenz-Grotesk BQ Bold"; }
+.team_profile_banner2 .banner-content ul li{ color:#58585a; font-size: 16px; font-family: "Akzidenz-Grotesk BQ Regular"; }
+.team_profile_banner2 .banner-content .player-score-center{ color:#ef1235; font-size: 34px; font-family: "Akzidenz-Grotesk BQ Regular"; }
+.team_profile_banner2 .banner-content .display-table{ vertical-align:top; }
+.team_profile_banner2 .banner-content .display-cell, .banner-content .display-table{ vertical-align:top; }
+.team_profile_banner2 .banner-content .display-table .player-dtl-left2{ text-align:right; }
+.team_profile_banner2 .banner-content .display-table .player-dtl-right2{ text-align:left; }
+
+.full_round{ background: rgba(0, 0, 0, 0) url("../images/full_round.jpg") no-repeat scroll center center / cover !important; float: left; padding: 0; width: 100%; min-height:300px; margin-top:0px !important; }
+
+.full_round .round_grey{ border: 1px solid #fff; border-radius: 50%; color: #ed1a3b; float: left; font-size: 24px; height: 60px; line-height: 60px;text-align: center; width: 60px; margin-top:-15px; font-family: "Akzidenz-Grotesk BQ Regular"; background:#dfe1da; }
+
+.full_round .round_grey_unfill{ border-radius: 50%; color: #FFF; float: left; font-size: 24px; height: 60px; line-height: 60px;text-align: center; width: 60px; margin-top:-15px; font-family: "Akzidenz-Grotesk BQ Bold"; }
+
+.team_profile_table img{ height:36px; }
+.team_profile_table img.iright{ float:right; }
+.team_profile_table img.ileft{ float:left; }
+.team_profile_table tr{ border-top:1px solid #a0a2a5; }
+.team_profile_table tr td{ height:120px; padding-top:40px; padding-bottom:40px; }
+.textfontbig{ color:#000000; font-family: "Akzidenz-Grotesk BQ Bold"; font-size:18px; }
+.textfontbig_red{ color:#ed1a3b; font-family: "Akzidenz-Grotesk BQ Bold"; font-size:18px; }
+.textfontsmall{ color:#58585a; font-family: "Akzidenz-Grotesk BQ Regular"; font-size:14px; }
+.filter_pag{ height:96px; padding-top:32px; padding-bottom:32px; }
+.filter_pag .width90{ width:90px !important; }
+.filter_pag .width140{ width:140px !important; }
+.filter_pag .dropdown-toggle{ height:40px !important; border-radius:0 !important; }
+.filter_pag .dropdown-toggle .bs-caret{ color:#ED1A3B; }
+.filter_pagination ul li{ height:40px !important; border-radius:0 !important; color:#58585a; font-family: "Akzidenz-Grotesk BQ Regular"; display:inline-block; background:#FFF; width:40px; text-align:center; line-height:36px; border:2px solid #FFF; }
+.filter_pagination ul li.active{ border:2px solid #ED1A3B; color:#58585a; font-family: "Akzidenz-Grotesk BQ Bold"; }
+.filter_pagination ul li.previous, .filter_pagination ul li.next{ background:#ed1a3b; border:2px solid #ed1a3b; }
+.filter_pagination img{ width:28px; height:28px; margin-bottom:7px; }
+.filter_pag_btm{ border-top:1px solid #a0a2a5; }
+
+section.full_venue_dtl_banner{ float: left; position: relative; width: 100%; }
+section.full_venue_dtl_banner img { background-position: center center; background-size: cover; width: 100%; }
+
+.full_venue_dtl{ background: rgba(0, 0, 0, 0) url("../images/venue-details-join-now.jpg") no-repeat scroll center center / cover !important; float: left; padding: 0; width: 100%; min-height:300px; margin-top:0px !important; }
+.full_venue_dtl h2{ color:#fff; font-family: "Akzidenz-Grotesk BQ Bold"; font-size:32px; }
+.full_venue_dtl .join_now{  margin-bottom: 100px; margin-top: 50px; border-radius:0; min-width:180px; }
+.venue_dtl_facil{ padding:70px 0; }
+.venue_dtl_facil .sec-head{ font-family: "Akzidenz-Grotesk BQ Bold"; font-size:24px; color:#ed1a3b; }
+.venue_dtl_facil .icon-row .icon-dtl{ font-family: "Akzidenz-Grotesk BQ Regular"; color:#58585a; font-size:18px !important; }
+.listing-map-dtl #listMap{ height:330px; background: #e7e8e9 none repeat scroll 0 0; float: left; width: 100%; }
+
+.dtl_h2{ background:#FFF; border:5px solid #ed1a3b; min-height:400px; }
+.dtl_h2 h2{ color:#ed1a3b; font-family: "Akzidenz-Grotesk BQ Bold"; font-size:34px; padding-bottom:20px; }
+.dtl_h2 p{ font-family: "Akzidenz-Grotesk BQ Regular"; color:#58585a; font-size:18px !important; }
+
+.full_venue_bnr_dtl h2{ color:#212121; font-family: "Akzidenz-Grotesk BQ Bold"; font-size:24px; }
+.full_venue_bnr_dtl h3{ color:#212121; font-family: "Akzidenz-Grotesk BQ Bold"; font-size:16px; }
+.full_venue_bnr_dtl h4{ color:#212121; font-family: "Akzidenz-Grotesk BQ Regular"; font-size:14px; margin-top:5px; }
+
+
+.full_venue_dtl_banner .caption { background: rgba(0, 0, 0, 0.7) none repeat scroll 0 0; bottom: 0; color: #fff; left: 0; padding: 15px 20px; position: absolute; right: 0; font-family: "Akzidenz-Grotesk BQ Bold"; font-size:34px; color:#FFF; height:100%; text-align:center; vertical-align:middle; padding-top:17%; }
+
+.full_venue_dtl_banner .caption_banner { background: rgba(0, 0, 0, 0.7) none repeat scroll 0 0; bottom: 0; color: #fff; left: 0; padding: 15px 20px; position: absolute; right: 0; text-align:center; }
+
+.full_venue_dtl_banner .caption_banner h2{ font-family: "Akzidenz-Grotesk BQ Bold"; font-size:24px; color:#FFF; }
+.full_venue_dtl_banner .caption_banner h2:after{ border-bottom: 2px solid #fff; content: ""; height: 40px; left: 50%; position: absolute; width: 2%; }
+.full_venue_dtl_banner .caption_banner p{ font-family: "Akzidenz-Grotesk BQ Regular"; font-size:18px; color:#FFF; }
+.full_venue_dtl_banner .banner_main{ width:30px; margin-right:40px; }
+.full_venue_dtl_banner .fheight{ line-height:45px; }
+
+.why-today-game iframe{ width:560px; height:315px; }
+.bdr_right{ display:block; }
+
+@media only screen and (max-width:1280px) {	
+}
+
+@media only screen and (max-width:1030px) {	
+	.hosting_guide_best .padleft0{ padding-left:10px; }
+	
+	.team_banner_logo{ width:100px !important; height:100px !important; }
+	.team_banner_link{ left: 56%; }	
+	.team_banner_text h2{ font-size:22px !important; }
+	.team_banner_button button{ font-size: 14px; min-height: 40px; min-width: 130px; }
+
+	.team_profile_banner2 .banner-content h3{ font-size: 26px; }
+	.team_profile_banner2 .banner-content h2{ font-size: 22px; }
+	.team_profile_banner2 .banner-content .container .player-flag img{ height: 48px; width: 48px; }
+	.team_profile_banner2 .eleven{ font-size: 26px; padding-top:7%; }
+}
+
+@media only screen and (max-width:1024px) {	
+	.dtl_h2{ min-height:310px; }
+	.dtl_h2 h2{ font-size: 20px; padding-bottom:10px; }
+	.dtl_h2 p{ font-size: 16px !important; }
+	.endorsed_count .left-count{ width:40px; height:40px; line-height:40px; font-size:24px; }
+	.h60-m10{ margin-top:-10px; }
+	.hosting-2 .col-xs-11 h4{ padding-left: 10px; }	
+	
+	.textfontbig{ font-size: 14px; }
+	.team_profile_table img{ height: 24px; }
+	
+}
+
+@media only screen and (max-width:991px) {
+	.full_round .round_grey_unfill{ font-size: 18px; height: 40px; line-height: 40px; width: 40px; }
+	.full_round .round_grey{ font-size: 18px; height: 40px; line-height: 40px; width: 40px; }
+	.full_round .display-table .display-cell .col-xs-8 .col-md-2{ float:left; width:15%; }
+	.full_round .display-table{ margin-top:15%; }
+}
+
+@media only screen and (max-width:767px) {
+	.venue_dtl_facil_responsive{ margin-top:0px; float:left; width:100%; }
+	.dtl_h2{ min-height:200px; margin-top:15px; margin-right:2%; margin-left:2%; width:96%; margin-bottom:30px; }
+	.full_venue_dtl_banner .caption_banner h2{ font-size:16px; }
+	.full_venue_dtl_banner .caption_banner h2::after{ height:25px; }
+	.full_venue_dtl_banner .banner_main{ width:15px; margin-right:10px; }
+	.full_venue_dtl_banner .caption_banner p{ font-size:14px; }	
+
+	.full_venue_dtl_banner .field_responsive33{ width:33%; float:left; }
+	.full_venue_dtl_banner .field_responsive66{ width:66%; float:left; }
+	.full_venue_dtl_banner .field_responsive66 .padright25{ padding-right:0px; }
+	.full_venue_dtl_banner .field_responsive66 h4{ padding-left: 15%; text-align:left; } 
+	.endorsed_count .left-count{ margin-right:10px; }
+
+	.full_venue_dtl_banner .full_venue_bnr_dtl{ float:left; width:100%; } 
+	
+	.be-endorsed{ display:none; }
+	.be-endorsed-mobile{ display:block; padding-bottom:0px !important; }
+	.be-endorsed-mobile img{ width:100%; }
+	
+	.be-endorsed-mobile .be-endorsed-text{ background:#E7E8EA; padding-top:5%; padding-bottom:5%; }
+	.become-host-why-mobile img{ margin-left: 25%; }
+	
+	.hosting_guide_best .padleft0{ padding-left:20px; }
+	.why-today-game iframe{ width:460px; height:315px; }
+	.why-today-game .btn-red{ margin-top:0px; }
+	.hosting-1{ display:none; }
+	.hosting-2{ display:none; }
+	
+	.be-endorsed-mobile-top0{ padding-top:0px !important; }
+	.be-endorsed-mobile .img_section{ padding-left:0px; padding-right:0px; }
+	
+	.be-endorsed-mobile .minheight300{ min-height:300px; }
+	.team_banner_link{ left: 63%; }
+	.team_banner_text h2{ font-size:22px; }	
+	.team_banner_button .col-sm-3{ width:25%; float:left; }
+	.team_banner_logo { /*height: 100px !important; width: 100px !important;*/ }
+	.team_banner_link{ left: 54%; }
+	.team_banner_text h2{ font-size: 18px !important; }
+	.team_profile_text h2{ font-size: 24px !important; }
+	
+	.team_profile_banner2 .banner-content .container .player-dtl-left2{ width:40%; } 
+	.team_profile_banner2 .banner-content .container .player-score-center{ text-align:center; width:20%; } 
+	.team_profile_banner2 .banner-content .container .player-dtl-right2{ width:40%; } 
+	
+	.full_round .display-table{ margin-top:18%; }
+	table.team_profile_table td{ width:20% !important; text-align:center !important; }
+	table.team_profile_table td.col-sm-10, table.team_profile_table td.col-sm-2{ width:100% !important; text-align:center !important; }
+	table.team_profile_table td .textfontbig{ text-align:center !important; }
+	.bdr_right{ display:none; }
+	
+	.filter_pag{ height: 170px; }
+	.filter_pag .col-xs-6{ width:100%; padding-bottom:20px; }
+	
+}
+
+@media only screen and (max-width:640px) {
+	.full_venue_dtl_banner .caption_banner h2{ font-size:14px; }
+	.full_venue_dtl_banner .caption_banner h2::after{ height:25px; }
+	.full_venue_dtl_banner .banner_main{ width:15px; margin-right:10px; }
+	.full_venue_dtl_banner .caption_banner p{ font-size:12px; }
+	.full_venue_bnr_dtl h3{ font-size: 16px; }
+	.full_venue_dtl_banner .field_responsive66 h4{ padding-left: 20%; text-align:left; }		
+	.why-today-game .fontsize16{ font-size:14px; }	
+	.hosting_guide_best .padleft0{ padding-left:30px; }
+	.why-today-game iframe{ width:360px; height:315px; }
+	.why-today-game .btn-red{ font-size: 18px; width: 250px; }
+	.hosting-testimonial .btn-white{ font-size: 18px; width: 250px !important; }
+	.team_banner_button{ margin-top:20px; }
+	.team_banner_button .col-sm-3{ width:50%; }
+	.team_banner_button button{ font-size: 12px; min-height: 28px; min-width:100px; margin-bottom:10px; }
+	.banner-content .display-table{ margin-top:20px; }
+	.team_banner_link { left: 57%;}
+	.team_banner_text h2{ font-size:18px !important; }
+	.team_profile_text h2{ font-size: 24px !important; }
+	.team_banner h2::after{ height:36px; }
+	.team_banner_text h2 a{ margin-left: 20px; }
+	.team_banner_text img { height: 20px !important; vertical-align: top; width: 20px !important; }
+	
+	.team_profile_banner2 .banner-content h2{ font-size:18px; }
+	.team_profile_banner2 .banner-content ul li{ font-size:14px; }
+	
+	.full_round .round_grey_unfill{ font-size: 16px; height: 32px; line-height: 32px; width: 32px; }
+	.full_round .round_grey{ font-size: 14px; height: 32px; line-height: 32px; width: 32px; }
+	.full_round .display-table .display-cell .col-xs-8 .col-md-2{ float:left; width:15%; }
+	.full_round .display-table{ margin-top:20%; }
+	
+	.filter_pag{ height: 170px; }
+	.filter_pag .col-xs-6{ width:100%; padding-bottom:20px; }
+	.filter_pag .filter_pagination{ text-align:left; }
+	
+	.team_banner_logo { height: 100px !important; width: 100px !important; }
+}
+
+@media only screen and (max-width:600px) {
+	table.team_profile_table td{ width:100% !important; text-align:center !important; }
+	table.team_profile_table td .textfontbig{ text-align:center !important; }
+	
+	.team_profile_table tr td{ padding-bottom: 10px; padding-top: 10px; }
+	table.team_profile_table tr td.c1st{ height:60px !important; }
+	table.team_profile_table tr td.c2nd{ height:40px !important; }
+	table.team_profile_table tr td.c3rd{ height:40px !important; }
+	table.team_profile_table tr td.c4th{ height:65px !important; }
+	table.team_profile_table tr td.c5th{ height:60px !important; }
+	
+	.map1{ width:100%; text-align:center !important; }
+	.map2{ width:100%; text-align:center !important; padding-right:0px; padding-top:5px; }
+}
+
+@media only screen and (max-width:480px) {
+	.full_venue_bnr_dtl h2{ font-size: 18px; }
+	.full_venue_bnr_dtl h3{ font-size: 12px; }
+	.full_venue_dtl_banner .field_responsive66 h4{ padding-left: 20%; text-align:left; }
+	.hosting_guide_best .padleft0{ padding-left:40px; }
+	.why-today-game iframe{ width:260px; height:315px; }
+	.team_banner_button button{ font-size: 10px; min-height: 28px; min-width:90px; margin-bottom:10px; }
+	
+	.team_profile_banner2 .banner-content h2{ font-size:14px; }
+	.team_profile_banner2 .banner-content ul li{ font-size:12px; }
+	
+	.full_round .round_grey_unfill{ font-size: 14px; height: 24px; line-height: 24px; width: 24px; }
+	.full_round .round_grey{ font-size: 12px; height: 24px; line-height: 24px; width: 24px; }
+	.full_round .display-table .display-cell .col-xs-8{ width:100%; } 
+	.full_round .display-table .display-cell .col-xs-8 .col-md-2{ float:left; width:10%; }
+	.full_round .display-table{ margin-top:30%; }
+}
+
+@media only screen and (max-width:360px) {
+	.full_venue_bnr_dtl h2{ font-size: 18px; }
+	.full_venue_bnr_dtl h3{ font-size: 12px; }
+	.full_venue_dtl_banner .field_responsive66 h4{ padding-left: 20%; text-align:left; }
+	.hosting_guide_best .padleft0{ padding-left:40px; }
+	.why-today-game iframe{ width:200px; height:315px; }
+}

@@ -1,0 +1,531 @@
+/* Home Banner :: START */
+.banner-video-new{ z-index: 9; background-image: url('../images/home/header-main-new.jpg'); background-repeat: no-repeat; background-position: center center; background-size: cover; }
+section.banner-video-new{ height: 560px; }
+
+.banner_description{ float: left; width: 100%; text-align: center; color: #fff; z-index: 10; margin-top: 70px; margin-bottom: 75px; }
+.banner_description .banner_hello{ font-family:"Roboto Thin"; font-size: 22px; }
+.banner_description .banner_what{ font-family:"robotobold"; font-size: 38px; }
+.banner_description .banner_what h1{ font-family:"robotobold"; font-size: 38px; }
+.banner_description .banner_tab_main{ width: 100%; float: left; padding-left: 0px; padding-right: 0px; padding-top: 70px; }
+.banner_description .banner_tab_main .col-md-3{ display: inline-block; float: none; vertical-align: top; width: 23%; }
+.banner_description .banner_tab_main .banner_link{ padding-top: 20px; min-height: 80px; }
+.banner_description .banner_tab_main .banner_link a{ color: #FFF; font-family:"Roboto Medium"; font-size: 18px; }
+.banner_description .banner_tab_main .banner_link a:hover{ color: #ed1a3b; }
+
+.banner_description .banner_tab_main a{ color: #FFF; }
+.banner_description .banner_tab_main a:hover{ color: #ed1a3b; }
+
+.banner_description .banner_tab_main .gredient_main_bg { height: 205px; width: 205px; border-radius: 10%; display: inline-block; 
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,e5e1d9+50,c5baa8+100 */
+background: #ffffff; /* Old browsers */
+background: -moz-linear-gradient(top, #ffffff 0%, #e5e1d9 50%, #c5baa8 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, #ffffff 0%,#e5e1d9 50%,#c5baa8 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, #ffffff 0%,#e5e1d9 50%,#c5baa8 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#c5baa8',GradientType=0 ); /* IE6-9 */ 
+}
+
+.banner_description .banner_tab_main .gredient_main_bg:hover{
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#e92b3a+0,c71c2a+50,9b0a16+100 */
+background: #e92b3a; /* Old browsers */
+background: -moz-linear-gradient(top, #e92b3a 0%, #c71c2a 50%, #9b0a16 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, #e92b3a 0%,#c71c2a 50%,#9b0a16 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, #e92b3a 0%,#c71c2a 50%,#9b0a16 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e92b3a', endColorstr='#9b0a16',GradientType=0 ); /* IE6-9 */
+}
+
+.banner_description .banner_tab_main .gredient_main_bg.active{
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#e92b3a+0,c71c2a+50,9b0a16+100 */
+background: #e92b3a; /* Old browsers */
+background: -moz-linear-gradient(top, #e92b3a 0%, #c71c2a 50%, #9b0a16 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, #e92b3a 0%,#c71c2a 50%,#9b0a16 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, #e92b3a 0%,#c71c2a 50%,#9b0a16 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e92b3a', endColorstr='#9b0a16',GradientType=0 ); /* IE6-9 */
+}
+
+.banner_description .banner_tab_main .gredient_main_inner { height: 205px; width: 100%; border-radius: 10%; background-repeat: no-repeat; background-position: center center; }
+
+.banner_description .banner_tab_main .join_a_game { background-size: 30%; background-image: url('../images/home/join_a_game_black.png'); }
+.banner_description .banner_tab_main .join_a_game:hover{ background-image: url('../images/home/join_a_game_white.png'); }
+.banner_description .banner_tab_main .join_a_game.active{ background-image: url('../images/home/join_a_game_white.png'); }
+
+.banner_description .banner_tab_main .organize_a_game { background-size: 30%; background-image: url('../images/home/organize_a_game_black.png'); }
+.banner_description .banner_tab_main .organize_a_game:hover{ background-image: url('../images/home/organize_a_game_white.png'); }
+.banner_description .banner_tab_main .organize_a_game.active{ background-image: url('../images/home/organize_a_game_white.png'); }
+
+.banner_description .banner_tab_main .find_an { background-size: 30%; background-image: url('../images/home/find_a_team_black.png'); }
+.banner_description .banner_tab_main .find_an:hover{ background-image: url('../images/home/find_a_team_white.png'); }
+.banner_description .banner_tab_main .find_an.active{ background-image: url('../images/home/find_a_team_white.png'); }
+
+.banner_description .banner_tab_main .book_a_pitch { background-size: 30%; background-image: url('../images/home/book_a_pitch_black.png'); }
+.banner_description .banner_tab_main .book_a_pitch:hover{ background-image: url('../images/home/book_a_pitch_white.png'); }
+.banner_description .banner_tab_main .book_a_pitch.active{ background-image: url('../images/home/book_a_pitch_white.png'); }
+.banner_description .banner_tab_main .caption_top2 {width: 90px; height: 90px; top: -4px; right: 11px; text-align: right; position: absolute;}
+.banner_description .banner_tab_main .caption_top2 .cat_ribbon {max-width: 100%; max-height: 100%; z-index: 1;}
+
+
+/* Home Banner :: OVER */
+
+/* About SS :: START */
+.about-ss-sectoin{ background: #ece3d4; padding-top: 20px; padding-bottom: 40px; float: left; width: 100%; }
+.about-ss-sectoin .about_ss_title{ font-family: 'robotobold'; font-size: 30px; color: #ed1a3a; margin-bottom: 25px; }
+.about-ss-sectoin h1.about_ss_title{ font-family: 'robotobold'; font-size: 30px; color: #ed1a3a; }
+.about-ss-sectoin .about_ss_description{ /*margin-top: 25px;*/ font-family:"Lato Regular"; font-size: 18px; color: #666666; padding-left: 15px; padding-right: 15px; line-height: 25px; }
+.about-ss-sectoin .about_ss_image{ padding-left: 15px; padding-right: 15px; text-align: center; }
+.about-ss-sectoin .about_ss_image img{ /*width: 100%; height: auto;*/ display: inline; max-height: 200px; }
+
+.about-ss-sectoin .about_ss_description_mobile{ margin-top: 25px; font-family:"Lato Regular"; font-size: 14px; color: #666666; padding-left: 15px; padding-right: 15px; display: none; }
+.about-ss-sectoin .about_ss_image_mobile{ padding-left: 15px; padding-right: 15px; display: none;}
+.about-ss-sectoin .about_ss_image_mobile img{ /*width: 100%; height: auto;*/ }
+/* About SS :: OVER */
+
+/* On Demand :: START */
+.on_demand{ z-index: 9; background-image: url('../images/home/on-demand-banner.jpg'); background-repeat: no-repeat; background-position: center center; background-size: cover; }
+section.on_demand{ padding-top: 30px; padding-bottom: 30px; height: 780px; }
+
+.on_demand_description{ float: left; width: 100%; text-align: center; color: #fff; z-index: 10; margin-bottom: 40px; }
+.on_demand_description .ondemand_hello{ font-family:"robotobold"; font-size: 30px; text-align: left; padding-left: 15px; }
+.on_demand_description .on_demand_what{ font-family:"Lato Regular"; font-size: 18px; text-align: left; padding-left: 15px; }
+.on_demand_description .on_demand_tab_main{ width: 100%; float: left; padding-left: 0px; padding-right: 0px; padding-top: 40px; }
+.on_demand_description .on_demand_tab_main .col-md-3{ /*display: inline-block; float: none;*/ vertical-align: top; width: 23%; }
+.on_demand_description .on_demand_tab_main .banner_link{ padding-bottom: 15px; /*min-height: 70px;*/ }
+.on_demand_description .on_demand_tab_main .banner_link a{ color: #FFF; font-family:"Roboto Medium"; font-size: 16px; }
+.on_demand_description .on_demand_tab_main .banner_link a:hover{ color: #fff; }
+.on_demand_description .on_demand_tab_main .on_demand_tab_desc{ background: #ece3d4; border-radius: 0 0 20px 20px; }
+.on_demand_description .on_demand_tab_main .on_demand_tab_desc .tab_desc_title{ padding: 30px 20px 20px 20px; color: #000000; font-family:"Lato Black"; font-size: 20px; min-height: 110px; }
+.on_demand_description .on_demand_tab_main .on_demand_tab_desc .tab_desc_desc{ color: #000000; font-family:"Lato Regular"; font-size: 16px; }
+
+.on_demand_description .on_demand_tab_main .on_demand_tab_desc .tab_desc_desc div{ padding: 0px 20px 20px 20px; min-height: 200px; }
+.on_demand_description .on_demand_tab_main .gredient_main_bg{ height: 205px; width: 100%; border-radius: 20px 20px 0 0; display: inline-block; 
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,e5e1d9+50,c5baa8+100 */
+background: #ffffff; /* Old browsers */
+background: -moz-linear-gradient(top, #ffffff 0%, #e5e1d9 50%, #c5baa8 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, #ffffff 0%,#e5e1d9 50%,#c5baa8 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, #ffffff 0%,#e5e1d9 50%,#c5baa8 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#c5baa8',GradientType=0 ); /* IE6-9 */ 
+}
+
+.on_demand_description .on_demand_tab_main .gredient_main_inner { height: 205px; width: 100%; border-radius: 20px 20px 0 0; background-repeat: no-repeat; background-position: center center; }
+
+.on_demand_description .on_demand_tab_main .join_a_game { background-size: 30%; background-image: url('../images/home/join_a_game_black.png'); }
+
+.on_demand_description .on_demand_tab_main .organize_a_game { background-size: 30%; background-image: url('../images/home/organize_a_game_black.png'); }
+
+.on_demand_description .on_demand_tab_main .find_an { background-size: 30%; background-image: url('../images/home/find_a_team_black.png'); }
+
+.on_demand_description .on_demand_tab_main .book_a_pitch { background-size: 30%; background-image: url('../images/home/book_a_pitch_black.png'); }
+
+.banner_link_top{ display: block; }
+.banner_link_bottom{ display: none; }
+
+/*
+.on_demand_description .on_demand_tab_main .gredient_main_bg:hover{
+background: #e92b3a; 
+background: -moz-linear-gradient(top, #e92b3a 0%, #c71c2a 50%, #9b0a16 100%); 
+background: -webkit-linear-gradient(top, #e92b3a 0%,#c71c2a 50%,#9b0a16 100%);
+background: linear-gradient(to bottom, #e92b3a 0%,#c71c2a 50%,#9b0a16 100%); 
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e92b3a', endColorstr='#9b0a16',GradientType=0 ); 
+}
+*/
+
+.on_demand_description .on_demand_tab_main .gredient_main_bg.active{
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#e92b3a+0,c71c2a+50,9b0a16+100 */
+background: #e92b3a; /* Old browsers */
+background: -moz-linear-gradient(top, #e92b3a 0%, #c71c2a 50%, #9b0a16 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, #e92b3a 0%,#c71c2a 50%,#9b0a16 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, #e92b3a 0%,#c71c2a 50%,#9b0a16 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e92b3a', endColorstr='#9b0a16',GradientType=0 ); /* IE6-9 */
+}
+
+.on_demand_description .on_demand_tab_main .banner_link a:hover{ color: #ed1a3b; }
+
+/*
+.on_demand_description .on_demand_tab_main .join_a_game:hover{ background-image: url('../images/home/join_a_game_white.png'); }
+.on_demand_description .on_demand_tab_main .organize_a_game:hover{ background-image: url('../images/home/organize_a_game_white.png'); }
+.on_demand_description .on_demand_tab_main .find_an:hover{ background-image: url('../images/home/find_a_team_white.png'); }
+.on_demand_description .on_demand_tab_main .book_a_pitch:hover{ background-image: url('../images/home/book_a_pitch_white.png'); }
+*/
+
+.on_demand_description .on_demand_tab_main .join_a_game.active{ background-image: url('../images/home/join_a_game_white.png'); }
+.on_demand_description .on_demand_tab_main .organize_a_game.active{ background-image: url('../images/home/organize_a_game_white.png'); }
+.on_demand_description .on_demand_tab_main .find_an.active{ background-image: url('../images/home/find_a_team_white.png'); }
+.on_demand_description .on_demand_tab_main .book_a_pitch.active{ background-image: url('../images/home/book_a_pitch_white.png'); }
+
+.on_demand_tab_desc_main{ border-radius: 20px !important; min-height: 150px; }
+
+.on_demand_tab_desc1{ display: none; border-radius: 20px !important; text-align: left !important; position: relative; background: #ece3d4; }
+.on_demand_tab_desc11:after { bottom: 100%; left: 12%; border: solid transparent; content: " "; height: 0; width: 0; position: absolute; pointer-events: none; border-color: rgba(236,227,212,0); border-bottom-color: #ece3d4; border-width: 10px; margin-left: -10px;
+}
+
+.on_demand_tab_desc2{ display: none; border-radius: 20px !important; text-align: left !important; position: relative; background: #ece3d4; }
+.on_demand_tab_desc22:after { bottom: 100%; left: 36%; border: solid transparent; content: " "; height: 0; width: 0; position: absolute; pointer-events: none; border-color: rgba(236,227,212,0); border-bottom-color: #ece3d4; border-width: 10px; margin-left: -10px;
+}
+
+.on_demand_tab_desc3{ display: none; border-radius: 20px !important; text-align: left !important; position: relative; background: #ece3d4; }
+.on_demand_tab_desc33:after { bottom: 100%; left: 58%; border: solid transparent; content: " "; height: 0; width: 0; position: absolute; pointer-events: none; border-color: rgba(236,227,212,0); border-bottom-color: #ece3d4; border-width: 10px; margin-left: -10px;
+}
+
+.on_demand_tab_desc4{ display: none; border-radius: 90% !important; text-align: left !important; position: relative; background: #ece3d4; }
+.on_demand_tab_desc44:after { bottom: 100%; left: 80%; border: solid transparent; content: " "; height: 0; width: 0; position: absolute; pointer-events: none; border-color: rgba(236,227,212,0); border-bottom-color: #ece3d4; border-width: 10px; margin-left: -10px;
+}
+
+.on_demand_tab_desc55:after { bottom: 100%; left: 26%; border: solid transparent; content: " "; height: 0; width: 0; position: absolute; pointer-events: none; border-color: rgba(236,227,212,0); border-bottom-color: #ece3d4; border-width: 10px; margin-left: -10px;
+}
+
+.on_demand_tab_desc66:after { bottom: 100%; left: 50%; border: solid transparent; content: " "; height: 0; width: 0; position: absolute; pointer-events: none; border-color: rgba(236,227,212,0); border-bottom-color: #ece3d4; border-width: 10px; margin-left: -10px;
+}
+
+.on_demand_tab_desc77:after { bottom: 100%; left: 73%; border: solid transparent; content: " "; height: 0; width: 0; position: absolute; pointer-events: none; border-color: rgba(236,227,212,0); border-bottom-color: #ece3d4; border-width: 10px; margin-left: -10px;
+}
+
+.desc_align_1{ margin-right: 1px; }
+/* On Demand :: OVER */
+
+/* Testimonials :: START */
+.testi-section{ background: #ffffff; padding-top: 40px; padding-bottom: 60px; float: left; width: 100%; }
+.testi-section .teti_title{ font-family: 'robotobold'; font-size: 30px; color: #ed1a3a; padding-left: 15px; }
+.testi-section .teti_desc{ padding-left: 15px; padding-right: 15px; }
+.testi-section .teti_desc .testi_item{ margin-top: 30px; text-align: center; }
+.testi-section .teti_desc .testi_item .testi_img{ width: 114px; height: 114px; border-radius: 50%; border: 2px solid #e92b3a; padding: 5px;     display: inline-block; }
+.testi-section .teti_desc .testi_item img{ width: 100px; height: 100px; border-radius: 50%; background-size: cover !important; background-position: center !important; } 
+.testi-section .teti_desc .testi_item .player_name{ font-family:"Lato Bold"; font-size: 18px; color: #040404; padding-top: 20px; }
+.testi-section .teti_desc .testi_item .player_game{ font-family:"Lato Light"; font-size: 14px; color: #e92b3a; }
+.testi-section .teti_desc .testi_item .player_desc{ font-family:"Lato Regular"; font-size: 15px; color: #666666; text-align: center; padding-top: 20px; }
+.testi-section .owl-dots { text-align: center; padding-top: 50px; }
+.testi-section .owl-dot{ display: inline-block; }
+.testi-section .owl-dot span{ width: 10px; height: 10px; margin: 5px 7px; background: #cecccc; -webkit-backface-visibility: visible; transition: opacity .2s ease; border-radius: 30px; display: block; }
+.testi-section .owl-dot.active span{ background: #e92b3a; }
+/* Testimonials :: OVER */
+
+
+/* Promotional :: START */
+.promo-section{ background: #e7e8e9; padding-top: 40px; padding-bottom: 60px; float: left; width: 100%; }
+.promo-section .promo_title{ font-family: 'robotobold'; font-size: 30px; color: #ed1a3a; padding-left: 15px; padding-bottom: 15px; }
+.promo-section .promo_desc{ padding-left: 15px; padding-right: 15px; }
+.promo-section .promo_desc .promo_item{ margin-top: 10px; }
+.promo-section .promo_desc .promo_item .image_section{ width: 100%; height: 140px; background-size: cover; background-position: center center; background-repeat: no-repeat; }
+.promo-section .promo_desc .promo_item .image_section img{ border-radius: 10px 10px 0 0; background-repeat: no-repeat; background-size: cover; background-position: center center; max-height: 140px; }
+.promo-section .promo_desc .promo_item .desc_section{ background: #FFF; padding: 15px; }
+.promo-section .promo_desc .promo_item .desc_section .promo_desc_title{ font-family:"Lato Black"; color: #000000; font-size: 16px; padding-bottom: 10px; }
+.promo-section .promo_desc .promo_item .desc_section .promo_description{ font-family:"Lato Regular"; color: #666666; font-size: 16px; min-height: 110px; }
+.promo-section .promo_desc .promo_item .button_section .button_orange{ background: #f99e1a; border-radius: 0 0 10px 10px; color: #FFF; font-family:"Lato Regular"; padding: 15px 10px; font-size: 18px; border: 0px; width: 100%; }
+.promo-section .promo_desc .promo_item a:hover .button_section .button_orange { background: #58585a; /*ed1a3b*/ }
+
+.promo-section .promo_desc .owl-carousel .owl-nav .owl-next{ position: absolute; top: 40%; right: -10%; }
+.promo-section .promo_desc .owl-carousel .owl-nav .owl-prev{ position: absolute; top: 40%; left: -10%; }
+/* Promotional :: OVER */
+
+@media only screen and (max-width: 1250px) {
+	.promo-section .promo_desc .owl-carousel .owl-nav .owl-next{ position: absolute; top: 40%; right: -3%; }
+	.promo-section .promo_desc .owl-carousel .owl-nav .owl-prev{ position: absolute; top: 40%; left: -3%; }
+}
+
+@media only screen and (max-width: 1100px) {
+	.desc_align_1{ margin-right: 0px; }
+}
+
+@media only screen and (max-width: 1030px) {
+	.banner_description .banner_tab_main .gredient_main_bg { height: 150px; width: 150px; }
+	.banner_description .banner_tab_main .gredient_main_inner { height: 150px; }
+	.banner_description .banner_tab_main .caption_top2 {right: 1px;}
+
+
+	/*section.on_demand{ height: 920px; }
+	.on_demand_description .on_demand_tab_main .on_demand_tab_desc .tab_desc_title{ min-height: 130px; }
+	.on_demand_description .on_demand_tab_main .on_demand_tab_desc .tab_desc_desc div{ min-height: 330px; }
+	.on_demand .on_demand_tab_main .gredient_main_bg { height: 150px; }
+	.on_demand .on_demand_tab_main .gredient_main_inner { height: 150px; }
+
+	.on_demand_description .on_demand_tab_main .banner_link{ min-height: 65px; }
+	.on_demand_description .on_demand_tab_main .banner_link a{ font-size: 14px; }
+	.on_demand_description .on_demand_tab_main .on_demand_tab_desc .tab_desc_title{ font-size: 20px; }
+	.on_demand_description .on_demand_tab_main .on_demand_tab_desc .tab_desc_desc{ font-size: 16px; }*/
+	
+	.on_demand .container{ padding-left: 20px; padding-right: 20px; }
+	.on_demand .container .row{ margin-left: 0px; margin-right: 0px; }
+	.on_demand_description .on_demand_tab_main .gredient_main_inner{ background-size: 50%; }
+	section.on_demand{ height: 530px; }
+	.on_demand_description .ondemand_hello{ font-size: 18px; }
+	.on_demand_description .on_demand_what{ font-size: 14px; }
+	.on_demand_description .on_demand_tab_main .col-md-3{ padding-left: 5px; padding-right: 5px; }
+	.on_demand_description .on_demand_tab_main .banner_link a{ font-size: 12px; }
+	
+	.on_demand_description .on_demand_tab_main .gredient_main_bg{ border-radius: 10%; }
+	.on_demand_description .on_demand_tab_main .gredient_main_inner{ border-radius: 10%; }
+	.on_demand_description .on_demand_tab_main .on_demand_tab_desc{ display: none; }
+	
+	.on_demand_description .on_demand_tab_main{ padding-top: 30px; }
+	.on_demand_description .on_demand_what{ font-size: 16px; }
+
+	.banner_link_top{ display: none; }
+	.banner_link_bottom{ display: block; padding-top: 20px; }
+
+	.on_demand_description .on_demand_tab_main .gredient_main_bg { height: 150px; }
+	.on_demand_description .on_demand_tab_main .gredient_main_inner { height: 150px; }
+
+	.on_demand_description .on_demand_tab_main .gredient_main_bg.active{
+		/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#e92b3a+0,c71c2a+50,9b0a16+100 */
+		background: #e92b3a; /* Old browsers */
+		background: -moz-linear-gradient(top, #e92b3a 0%, #c71c2a 50%, #9b0a16 100%); /* FF3.6-15 */
+		background: -webkit-linear-gradient(top, #e92b3a 0%,#c71c2a 50%,#9b0a16 100%); /* Chrome10-25,Safari5.1-6 */
+		background: linear-gradient(to bottom, #e92b3a 0%,#c71c2a 50%,#9b0a16 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e92b3a', endColorstr='#9b0a16',GradientType=0 ); /* IE6-9 */
+	}
+	
+	.banner_description .banner_tab_main .join_a_game{ background-size: 35%; }
+	.banner_description .banner_tab_main .organize_a_game{ background-size: 35%; }
+	.banner_description .banner_tab_main .find_an{ background-size: 35%; }
+	.banner_description .banner_tab_main .book_a_pitch{ background-size: 35%; }
+	
+	.on_demand_description .on_demand_tab_main .active .join_a_game{ background-image: url('../images/home/join_a_game_white.png'); }
+	
+	.on_demand_tab_desc1 { padding: 30px; border-radius: 15px !important; display: block; }
+	.on_demand_tab_desc1 .tab_desc_title{ color: #000000; padding: 0px !important; font-size: 16px !important; font-family: "Lato Black" !important; min-height: 30px !important; }
+	.on_demand_tab_desc1 .tab_desc_desc{ color: #201103; padding: 0px !important; font-size: 16px !important; font-family: "Lato Regular" !important; }
+
+	.on_demand_tab_desc2 { padding: 30px; border-radius: 15px !important; }
+	.on_demand_tab_desc2 .tab_desc_title{ color: #000000; padding: 0px !important; font-size: 16px !important; font-family: "Lato Black" !important; min-height: 30px !important; }
+	.on_demand_tab_desc2 .tab_desc_desc{ color: #201103; padding: 0px !important; font-size: 16px !important; font-family: "Lato Regular" !important; }
+
+	.on_demand_tab_desc3 { padding: 30px; border-radius: 15px !important; }
+	.on_demand_tab_desc3 .tab_desc_title{ color: #000000; padding: 0px !important; font-size: 16px !important; font-family: "Lato Black" !important; min-height: 30px !important; }
+	.on_demand_tab_desc3 .tab_desc_desc{ color: #201103; padding: 0px !important; font-size: 16px !important; font-family: "Lato Regular" !important; }
+
+	.on_demand_tab_desc4 { padding: 30px; border-radius: 15px !important; }
+	.on_demand_tab_desc4 .tab_desc_title{ color: #000000; padding: 0px !important; font-size: 16px !important; font-family: "Lato Black" !important; min-height: 30px !important; }
+	.on_demand_tab_desc4 .tab_desc_desc{ color: #201103; padding: 0px !important; font-size: 16px !important; font-family: "Lato Regular" !important; }
+	
+	.on_demand_description .on_demand_tab_main .join_a_game { background-size: 30%; }
+	.on_demand_description .on_demand_tab_main .organize_a_game { background-size: 30%; }
+	.on_demand_description .on_demand_tab_main .find_an { background-size: 30%; }
+	.on_demand_description .on_demand_tab_main .book_a_pitch { background-size: 30%; }
+
+	.about-ss-sectoin .about_ss_title{ font-size: 30px; }
+	.about-ss-sectoin .about_ss_description{ font-size: 18px; /*margin-top: 30px;*/ }
+	.testi-section .teti_title{ font-size: 30px; }		
+		
+}
+
+@media only screen and (max-width: 992px) {
+	.promo-section .promo_desc .owl-carousel .owl-stage-outer .owl-stage{ padding-left: 0px !important; }
+	.promo-section .promo_desc .promo_item .desc_section .promo_description{ font-size: 16px; }
+}
+
+@media only screen and (max-width: 768px) {
+	.banner-video-new .container{ padding-left: 20px; padding-right: 20px; }
+	.banner-video-new .container .row{ margin-left: 0px; margin-right: 0px; }
+	.banner_description .banner_tab_main .gredient_main_inner{ background-size: 50%; }
+	section.banner-video-new{ height: 450px; }
+	.banner_description .banner_hello{ font-size: 14px; }
+	.banner_description .banner_what{ font-size: 17px; }
+	.banner_description .banner_what h1{ font-size: 17px; }
+	.banner_description .banner_tab_main .col-md-3{ padding-left: 5px; padding-right: 5px; }
+	.banner_description .banner_tab_main .banner_link a{ font-size: 16px; }
+	
+	.banner_description .banner_tab_main .gredient_main_bg { width: 135px; height: 135px; }
+	.banner_description .banner_tab_main .gredient_main_inner { height: 135px; }
+	.banner_description .banner_tab_main .caption_top2 {right: 9px;width: 70px; height: 70px;}
+	
+	.on_demand_description .on_demand_tab_main .gredient_main_bg { width: 120px; height: 120px; }
+	.on_demand_description .on_demand_tab_main .gredient_main_inner { height: 120px; }
+
+	.on_demand_tab_desc1 .tab_desc_desc{ font-size: 14px !important; }
+	.on_demand_tab_desc2 .tab_desc_desc{ font-size: 14px !important; }
+	.on_demand_tab_desc3 .tab_desc_desc{ font-size: 14px !important; }
+	.on_demand_tab_desc4 .tab_desc_desc{ font-size: 14px !important; }
+	
+	.on_demand_description .on_demand_tab_main .join_a_game{ background-size: 50%; }
+	.on_demand_description .on_demand_tab_main .organize_a_game{ background-size: 50%; }
+	.on_demand_description .on_demand_tab_main .find_an{ background-size: 50%; }
+	.on_demand_description .on_demand_tab_main .book_a_pitch{ background-size: 50%; }
+
+	.about-ss-sectoin{ /*margin-bottom: 40px;*/ }
+	
+	.about-ss-sectoin .container{ padding-left: 20px; padding-right: 20px; }
+	.about-ss-sectoin .container .row{ margin-left: 0px; margin-right: 0px; }
+
+	.about-ss-sectoin .about_ss_title{ position: relative !important; width: 100%; float: left; padding-left: 0px; padding-right: 0px; font-size: 18px; }
+
+	.about-ss-sectoin .about_ss_description span{ display: none; }
+	.about-ss-sectoin .about_ss_image{ padding-left: 15px; padding-right: 15px; display: none; }
+
+	.about-ss-sectoin .about_ss_description_mobile{ margin-top: 30px; margin-bottom: 30px; font-family:"Lato Regular"; font-size: 14px; color: #666666; padding-left: 0px; padding-right: 0px; display: block; }
+	.about-ss-sectoin .about_ss_image_mobile{ padding-left: 0px; padding-right: 0px; display: block; margin-top: 20px; text-align: center; }
+	.about-ss-sectoin .about_ss_image_mobile img{ /*width: 98%;*/ display: inline; }
+	
+	.testi-section .container{ padding-left: 20px; padding-right: 20px; }
+	.testi-section .container .row{ margin-left: 0px; margin-right: 0px; }
+	.testi-section .teti_title{ font-size: 18px; padding-left: 0px; }
+	
+	.promo-section .container{ padding-left: 20px; padding-right: 20px; }
+	.promo-section .container .row{ margin-left: 0px; margin-right: 0px; }
+	.promo-section .promo_desc { padding-left: 0px; padding-right: 0px; }
+	.promo-section .promo_title{ font-size: 18px; padding-left: 0px; }	
+	
+	.promo-section .promo_desc .promo_item .image_section{ height: 130px; }
+	.promo-section .promo_desc .promo_item .image_section img{ max-height: 130px; }
+	.promo-section .promo_desc .promo_item .desc_section .promo_desc_title{ min-height: 60px; }	
+	.promo-section .promo_desc .promo_item .desc_section .promo_description{ min-height: 150px; }
+	
+	.testi-section .teti_desc .testi_item .player_name{ font-size: 16px; }
+	.testi-section .teti_desc .testi_item .player_game{ font-size: 14px; }
+	.testi-section .teti_desc .testi_item .player_desc{ font-size: 14px; }
+	
+}
+@media only screen and (max-width: 745px) {
+	.banner_description .banner_tab_main .caption_top2 {right: 7px;}
+}
+
+@media only screen and (max-width: 680px) {
+	.banner_description .banner_tab_main .gredient_main_bg { height: 120px; width: 120px; }
+	.banner_description .banner_tab_main .gredient_main_inner { height: 120px; }
+	
+	.on_demand_description .on_demand_tab_main .gredient_main_bg { height: 120px; }
+	.on_demand_description .on_demand_tab_main .gredient_main_inner { height: 120px; }
+
+	.testi-section .teti_desc .testi_item .player_desc{ text-align: center; }
+	
+	.promo-section .promo_desc .promo_item .desc_section .promo_description{ min-height: 150px; }
+	
+	.promo-section .promo_desc .promo_item .image_section{ height: 120px; }
+	.promo-section .promo_desc .promo_item .image_section img{ max-height: 120px; }
+	.promo-section .promo_desc .promo_item .desc_section .promo_desc_title{ min-height: 60px; }	
+	.promo-section .promo_desc .promo_item .desc_section .promo_description{ min-height: 150px; }
+}
+
+@media only screen and (max-width: 640px) {
+	.promo-section .promo_desc .promo_item .image_section{ height: 105px; }
+	.promo-section .promo_desc .promo_item .image_section img{ max-height: 105px; }
+	.promo-section .promo_desc .promo_item .desc_section .promo_desc_title{ min-height: 60px; }	
+	.promo-section .promo_desc .promo_item .desc_section .promo_description{ min-height: 150px; }
+	.banner_description .banner_tab_main .caption_top2 {right: 6px;}
+}
+
+@media only screen and (max-width: 620px) {
+	.on_demand_description .on_demand_tab_main .banner_link{ min-height: 80px; }
+	.banner_description .banner_tab_main .caption_top2 {right: 2px;}
+}
+
+@media only screen and (max-width: 580px) {
+	.promo-section .promo_desc .promo_item .image_section{ height: 95px; }
+	.promo-section .promo_desc .promo_item .image_section img{ max-height: 95px; }
+	.promo-section .promo_desc .promo_item .desc_section .promo_desc_title{ min-height: 60px; }	
+	.promo-section .promo_desc .promo_item .desc_section .promo_description{ min-height: 175px; }
+	.banner_description .banner_tab_main .caption_top2 {right: -6px;}
+
+}
+
+@media only screen and (max-width: 560px) {
+	
+	.banner_description{ margin-top: 60px; margin-bottom: 65px; }	
+	.banner_description .banner_tab_main{ padding-top: 60px; }
+	section.banner-video-new{ height: 380px; }
+	.banner_description .banner_tab_main .gredient_main_bg { height: 100%; width: 100%; }
+	.banner_description .banner_tab_main .gredient_main_inner { height: 100px; width: 100%; }	
+	.banner_description .banner_tab_main .caption_top2 {right: 1px; height: 60px; width: 60px;}
+
+	
+	
+	.on_demand_description{ margin-top: 0px; margin-bottom: 0px; }	
+	.on_demand_description .on_demand_tab_main{ padding-top: 30px; }	
+	section.on_demand{ height: 530px; }
+	.on_demand_description .on_demand_tab_main .gredient_main_bg { height: 100%; width: 100%; }
+	.on_demand_description .on_demand_tab_main .gredient_main_inner { height: 100px; width: 100%; }	
+	
+	.promo-section .promo_desc .promo_item .image_section{ height: 180px; }
+	.promo-section .promo_desc .promo_item .image_section img{ max-height: 180px; }
+	.promo-section .promo_desc .promo_item .desc_section .promo_desc_title{ min-height: 36px; }	
+	.promo-section .promo_desc .promo_item .desc_section .promo_description{ min-height: 100px; }
+
+}
+
+@media only screen and (max-width: 480px) {
+	.banner_description .banner_tab_main .gredient_main_bg { height: 100%; width: 100%; }
+	.banner_description .banner_tab_main .gredient_main_inner { height: 80px; width: 100%; }
+	.banner_description .banner_tab_main .banner_link a{ font-size: 14px; }
+	.banner_description .banner_tab_main .caption_top2 {right: 2px; top: -3px; height: 50px; width: 50px;}
+
+	
+	.on_demand_description .on_demand_tab_main .gredient_main_bg { height: 100%; width: 100%; }
+	.on_demand_description .on_demand_tab_main .gredient_main_inner { height: 80px; width: 100%; }
+	.on_demand_description .on_demand_tab_main .banner_link a{ font-size: 14px; }
+	
+	.promo-section .promo_desc .promo_item .image_section{ height: 165px; }
+	.promo-section .promo_desc .promo_item .image_section img{ max-height: 165px; }
+	.promo-section .promo_desc .promo_item .desc_section .promo_desc_title{ min-height: 36px; }	
+	.promo-section .promo_desc .promo_item .desc_section .promo_description{ min-height: 100px; }
+}
+
+@media only screen and (max-width: 420px) {
+	section.banner-video-new{ height: 320px; }
+	.banner_description .banner_tab_main .gredient_main_bg { height: 100%; width: 100%; }
+	.banner_description .banner_tab_main .gredient_main_inner { height: 68px; width: 100%; }
+	.banner_description{ margin-top: 40px; margin-bottom: 45px; }	
+	.banner_description .banner_tab_main{ padding-top: 40px; }
+	.banner_description .banner_tab_main .caption_top2 {right: 2px; top: -3px; height: 45px; width: 45px;}
+
+
+	section.on_demand{ height: 510px; }
+	.on_demand_description .on_demand_tab_main .gredient_main_bg { height: 100%; width: 100%; }
+	.on_demand_description .on_demand_tab_main .gredient_main_inner { height: 68px; width: 100%; }
+	.on_demand_description{ margin-top: 0px; margin-bottom: 0px; }	
+	.on_demand_description .on_demand_tab_main{ padding-top: 30px; }
+
+	.promo-section .promo_desc .promo_item .image_section{ height: 140px; }
+	.promo-section .promo_desc .promo_item .image_section img{ max-height: 140px; }
+	.promo-section .promo_desc .promo_item .desc_section .promo_desc_title{ min-height: 36px; }	
+	.promo-section .promo_desc .promo_item .desc_section .promo_description{ min-height: 120px; }
+}
+
+@media only screen and (max-width: 410px) {	
+	.promo-section .promo_desc .promo_item .desc_section .promo_desc_title{ min-height: 60px; }	
+	.banner_description .banner_tab_main .caption_top2 {right: 1px; top:-3px;}
+
+}
+
+@media only screen and (max-width: 380px) {	
+	.promo-section .promo_desc .promo_item .image_section{ height: 120px; }
+	.promo-section .promo_desc .promo_item .image_section img{ max-height: 120px; }
+	.promo-section .promo_desc .promo_item .desc_section .promo_description{ min-height: 140px; }
+	.banner_description .banner_tab_main .caption_top2 {right: 3px; height: 40px; width: 40px; top: -2px;}
+
+}
+
+@media only screen and (max-width: 360px) {	
+	.promo-section .promo_desc .promo_item .image_section{ height: 110px; }
+	.promo-section .promo_desc .promo_item .image_section img{ max-height: 110px; }
+	.promo-section .promo_desc .promo_item .desc_section .promo_description{ min-height: 140px; }
+	.banner_description .banner_tab_main .caption_top2 {right: 3px; height: 40px; width: 40px; top: -2px;}
+
+}
+
+@media only screen and (max-width: 350px) {
+	.chat_div_brd1 span, .chat_div_brd2 span{ font-size: 14px; }
+
+	section.banner-video-new{ height: 300px; }
+	.banner_description{ margin-top: 35px; margin-bottom: 40px; }	
+	.banner_description .banner_tab_main{ padding-top: 35px; }
+	.banner_description .banner_what{ font-size: 18px; }
+	.banner_description .banner_what h1{ font-size: 18px; }
+	.banner_description .banner_tab_main .gredient_main_bg { height: 100%; width: 100%; }
+	.banner_description .banner_tab_main .gredient_main_inner { height: 64px; width: 100%; }
+
+	section.on_demand{ height: 570px; }
+	.on_demand_description{ margin-top: 0px; margin-bottom: 0px; }	
+	.on_demand_description .on_demand_tab_main{ padding-top: 35px; }
+	.on_demand_description .on_demand_what{ font-size: 18px; }
+	.on_demand_description .on_demand_tab_main .gredient_main_bg { height: 100%; width: 100%; }
+	.on_demand_description .on_demand_tab_main .gredient_main_inner { height: 64px; width: 100%; }
+
+	.about-ss-sectoin .about_ss_description{ font-size: 12px; }
+	.about-ss-sectoin .about_ss_description_mobile{ font-size: 14px; }
+	
+	.testi-section .teti_desc .testi_item .player_name{ font-size: 14px; }
+	.testi-section .teti_desc .testi_item .player_game{ font-size: 13px; }
+	.testi-section .teti_desc .testi_item .player_desc{ font-size: 13px; }
+	
+	.promo-section .promo_desc .promo_item .image_section{ height: 95px; }
+	.promo-section .promo_desc .promo_item .image_section img{ max-height: 95px; }
+	.promo-section .promo_desc .promo_item .desc_section .promo_description{ min-height: 180px; }
+	
+}
+ 

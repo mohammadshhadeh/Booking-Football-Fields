@@ -1,0 +1,56 @@
+@media (max-width: 992px){
+	.about-ss-sectoin .col-sm-6.about_ss_description{ width: 50%; }
+	.about-ss-sectoin .col-sm-6.about_ss_image{ width: 50%; }
+}
+
+@media only screen and (max-width: 768px) {
+	.about-ss-sectoin .col-sm-6.about_ss_description{ width: 100%; }
+	.about_ss_mobile{ display: none; }
+}
+
+/* NEW 2 Button :: START */
+.banner_description .banner_tab_main .col-md-6{ width: 48%; padding-left: 5%; padding-right: 0%; }
+.banner_description .banner_tab_main .col-md-6 .gredient_main_bg { width: 100%; border-radius: 20px; }
+section.banner-video-new{ /*height: auto;*/ }
+
+.banner_description .banner_tab_main .home_leagues{ background-size: 15%; background-image: url('https://strangersoccer.com/images/home/blank-128.png'); padding-top: 15%; color: #000; font-size: 21px; font-weight: 700; }
+.banner_description .banner_tab_main .home_leagues:hover{ /*background-image: url('../images/home/HomeLeagues.png');*/ color: #FFF; }
+.banner_description .banner_tab_main .home_leagues.active{ /*background-image: url('../images/home/HomeLeagues.png');*/ color: #FFF; }
+
+.banner_description .banner_tab_main .home_junior { background-size: 15%; background-image: url('https://strangersoccer.com/images/home/blank-128.png'); padding-top: 15%; color: #000; font-size: 21px; font-weight: 700; }
+.banner_description .banner_tab_main .home_junior:hover{ /*background-image: url('../images/home/HomeSSJuniors.png');*/ color: #FFF; }
+.banner_description .banner_tab_main .home_junior.active{ /*background-image: url('../images/home/HomeSSJuniors.png');*/ color: #FFF; }
+
+.banner_description .banner_tab_main .home_leagues img, .banner_description .banner_tab_main .home_junior img{ width: 15%; }
+
+@media only screen and (max-width: 768px) {
+	.banner_description .banner_tab_main .home_leagues{ font-size: 16px; }
+	.banner_description .banner_tab_main .home_junior{ font-size: 16px; }
+}
+
+@media only screen and (max-width: 680px) {
+	.banner_description .banner_tab_main .home_leagues{ padding-top: 20%; }
+	.banner_description .banner_tab_main .home_junior{ padding-top: 20%; }
+}
+
+@media only screen and (max-width: 680px) {
+	.banner_description .banner_tab_main .home_leagues{ padding-top: 15%; }
+	.banner_description .banner_tab_main .home_junior{ padding-top: 15%; }
+}
+
+@media only screen and (max-width: 580px) {
+	.banner_description .banner_tab_main .home_leagues{ padding-top: 18%; }
+	.banner_description .banner_tab_main .home_junior{ padding-top: 18%; }
+}
+
+@media only screen and (max-width: 480px) {
+	.banner_description .banner_tab_main .home_leagues{ padding-top: 15%; }
+	.banner_description .banner_tab_main .home_junior{ padding-top: 15%; }
+}
+
+@media only screen and (max-width: 420px) {
+	.banner_description .banner_tab_main .home_leagues{ font-size: 14px; }
+	.banner_description .banner_tab_main .home_junior{ font-size: 14px; }
+}
+
+/* NEW 2 Button :: OVER */

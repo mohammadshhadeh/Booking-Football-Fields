@@ -1,0 +1,168 @@
+@font-face {
+    font-family: 'akzidenz-grotesk_bq_condensBd';
+    src: url('fonts/akzidenz-grotesk-bq-bold-condensed_2806-webfont.eot');
+    src: url('fonts/akzidenz-grotesk-bq-bold-condensed_2806-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/akzidenz-grotesk-bq-bold-condensed_2806-webfont.woff2') format('woff2'),
+         url('fonts/akzidenz-grotesk-bq-bold-condensed_2806-webfont.woff') format('woff'),
+         url('fonts/akzidenz-grotesk-bq-bold-condensed_2806-webfont.ttf') format('truetype'),
+         url('fonts/akzidenz-grotesk-bq-bold-condensed_2806-webfont.svg#akzidenz-grotesk_bq_condensBd') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/* CSS Document */
+@font-face {
+
+font-family: AkzidenzGroteskCn;
+
+src: url("font/Akzidenz-Grotesk-BQ-Condensed_2812.ttf");
+
+}
+
+@font-face {
+
+font-family: AkzidenzGroteskLiCn;
+
+src: url("font/Akzidenz-Grotesk-BQ-Light-Condensed_2824.ttf");
+
+}
+
+@font-face {
+
+font-family: AkzidenzGroteskLiCnIt;
+
+src: url("font/Akzidenz-Grotesk-BQ-Light-Condensed-Italic_2823.ttf");
+
+}
+
+@font-face {
+
+font-family: AkzidenzGroteskMdCn;
+
+src: url("font/Akzidenz-Grotesk-BQ-Medium-Condensed-Alt_2832.ttf");
+
+}
+
+@font-face {
+
+font-family: AkzidenzGroteskMdCnIt;
+
+src: url("font/Akzidenz-Grotesk-BQ-Medium-Condensed-Italic-Alt_2833.ttf");
+
+}
+
+
+@font-face {
+
+font-family: AkzidenzGroteskBo;
+
+src: url("font/Akzidenz-Grotesk-BQ-Bold_2810.ttf");
+
+}
+
+@font-face {
+
+font-family: AkzidenzGroteskBoCn;
+
+src: url("font/Akzidenz-Grotesk-BQ-Bold-Condensed_2806.ttf");
+
+}
+
+@font-face {
+
+font-family: AkzidenzGroteskExtraBoCn;
+
+src: url("font/Akzidenz-Grotesk-BQ-Extra-Bold-Condensed_2819.ttf");
+
+}
+
+@font-face {
+
+font-family: AkzidenzGroteskExtraBoCnIt;
+
+src: url("font/Akzidenz-Grotesk-BQ-Extra-Bold-Condensed-Italic-Alt_2817.ttf");
+
+}
+
+@font-face {
+
+font-family: AkzidenzGroteskLi;
+
+
+src: url("font/Akzidenz-Grotesk-BQ-Light_2831.ttf");
+
+}
+
+@font-face {
+
+font-family: AkzidenzGroteskMd;
+
+src: url("font/Akzidenz-Grotesk-BQ-Medium_2839.ttf");
+
+}
+
+@font-face {
+
+font-family: AkzidenzGroteskReg;
+
+src: url("font/Akzidenz-Grotesk-BQ-Regular_2840.ttf");
+
+}
+/*
+body
+{
+	font-family:"AkzidenzGroteskReg","MS Serif", "New York", serif;
+	color:#757575;
+}
+
+* {
+    margin:0;
+    padding:0;
+    list-style:none;
+}
+
+img {
+	border:none;
+	max-width:100%;
+}*/
+ul, li{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.clear { clear:both; }
+
+.openP {}
+
+.popup_otp { display:block; display: none; font-family:"AkzidenzGroteskReg","MS Serif", "New York", serif; color:#757575; }
+.popupbg_otp {background:rgba(0,0,0,.3); width:100%; height:100%; position:fixed; left:0; top:0; z-index:111100; }
+.pCnt_otp {overflow-y:auto !important; overflow-x: hidden;  position:fixed; left:50%; top:10px; width:80%; max-width: 450px; box-shadow:0px 0px 5px rgba(0,0,0,.5); background:#f8f5f1; z-index:1111111;   /* bring your own prefixes */
+  transform: translate(-50%, 0%); height: auto;}
+
+.pWpr { width:295px; margin:0 auto; text-align:center; padding:20px 0 50px 0; }
+.pWpr h5 { font-size:20px; font-weight:normal; margin: 0;}
+.pWpr p { font-size:16px; padding:12px 0; margin: 0px 0 0 0;}
+.pWpr textarea { width:100%; height:45px; background:#e1e1e1; font-size:16px; color:#c6c6c6; border:none; text-align:center; padding:10px; box-sizing:border-box; resize:none; border-radius:5px; font-family:"AkzidenzGroteskReg","MS Serif", "New York", serif; }
+.pWpr input[type="submit"] {-webkit-appearance: none; width:100%; height:40px; line-height:35px; background:#ed1a3b; font-size:16px; color:#fff; cursor:pointer; border:none; margin-top:12px; border-radius:5px; font-family:"Akzidenz-Grotesk BQ Bold","MS Serif", "New York", serif; }
+.pWpr input[type="submit"]:hover{background:#cd0a1b;} 
+
+.otp_section { padding-bottom:15px;  }
+.otp_section ul li { width:48%; float:left; margin-right:2%; margin-bottom:10px; }
+.otp_section ul li:nth-child(2n) { margin-right:0; }
+.otp_section ul li a { display:block; text-align:center; line-height:35px; background:#fff; border-radius:5px; font-size:15px; color:#94969a; text-decoration:none; }
+.otp_section ul li a:hover { color:#ed1a3b; }
+.otp_section ul li .selected_a { color:#ed1a3b; }
+.otp_section ul li input { display:none; text-align:center; line-height:35px; background:#fff; border-radius:5px; font-size:15px; color:#94969a; text-decoration:none; }
+.otp_section p {margin-bottom: 10px; font-size: 18px;}
+
+/* Portrait */
+@media only screen and (max-device-width: 736px) and (min-device-width: 320px) { 
+
+.pWpr { width:90%; }
+
+}
+
+
+

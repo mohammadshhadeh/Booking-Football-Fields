@@ -1,0 +1,119 @@
+.type_links_main{ padding-left:25%; padding-right:25%; }
+.type_links_main .col-md-4{ margin:5px; width:31%; background:#FFF; border-radius:5px; box-shadow:2px 2px 2px 2px #b1b1b2; padding-top:20px; padding-bottom:20px; min-height:150px; }
+
+.type_links_main .col-md-4 .field_img{  }
+.type_links_main .col-md-4 .field_img img{ display:inline-block; }
+.type_links_main .col-md-4 .field_img img.court{ width:56px; padding-top:20px; }
+.type_links_main .col-md-4 .field_img img.quality{ width:48px; }
+.type_links_main .col-md-4 .field_img img.grass{ width:56px; padding-top:20px; }
+.type_links_main .col-md-4 .field_ttl{ font-weight:700; padding-top:5px; font-size:16px; font-family: 'Akzidenz-Grotesk BQ Regular'; color:#212121; }
+.type_links_main .col-md-4 .field_val{ font-weight:400; font-family: 'Akzidenz-Grotesk BQ Regular'; color:#212121; }
+
+.aminities_main{}
+.aminities_main .col-md-3{ padding-right:0px; }
+.aminities_main .aminities_title{ font-family: 'Akzidenz-Grotesk BQ Bold'; color:#ed1a3b; font-size:24px; padding-bottom:20px; }
+.aminities_main .field_img{ float:left; min-width:70px; }
+.aminities_main .field_img img{ max-width:56px; }
+.aminities_main .field_ttl{ font-family: 'Akzidenz-Grotesk BQ Regular'; font-weight:700; color:#58585a; text-align:left; font-size:16px; }
+.aminities_main .field_ttl div{ font-family: 'Akzidenz-Grotesk BQ Regular'; font-weight:400; color:#58585a; text-align:left; font-size:14px; }
+
+.image_map_view .view_div{ background:#FFF; width:64px; height:64px; border-radius:100px; margin-bottom:10px; cursor:pointer; }
+.image_map_view .view_div:hover{ background:#ed1a3b; }
+.image_map_view .view_div.active{ background:#ed1a3b; }
+.image_map_view .view_div img{ display:inline-block; padding-top:15px; height:48px !important; }
+
+.transport_div .main_ttl{ font-family: 'Akzidenz-Grotesk BQ Bold'; color:#ed1a3b; font-size:24px; text-align:left; }
+.transport_div .sub_ttl{ font-family: 'Akzidenz-Grotesk BQ Regular'; color:#ed1a3b; font-size:16px; text-align:left; }
+.transport_div .field_img{ float:left; min-width:70px; }
+.transport_div .field_img img{ max-width:56px; }
+.transport_div .field_ttl{ font-family: 'Akzidenz-Grotesk BQ Regular'; font-weight:700; color:#58585a; text-align:left; font-size:16px; }
+.transport_div .field_ttl div{ font-family: 'Akzidenz-Grotesk BQ Regular'; font-weight:400; color:#58585a; text-align:left; font-size:14px; }
+
+.transport_div .cab_div{ padding-left:5px; max-height:48px; }
+.transport_div .cab_div img{ max-height:48px; display:inline-block; padding-right:10px; float:left; }
+.transport_div .cab_ttl{ font-family: 'Akzidenz-Grotesk BQ Regular'; font-weight:400; color:#58585a; text-align:left; font-size:14px; padding-left:5px; padding-top:5px; }
+
+.booking_btns{ position:relative; bottom:0px; width:100%; z-index:9999; }
+.booking_btns.sticky_fixed{ position:fixed; }
+
+@media only screen and (max-width: 1030px) {
+	.type_links_main{ padding-left:20%; padding-right:20%; }
+	.aminities_main .col-md-3{ width:50%; float:left; padding-left:2px; padding-right:2px; }
+	
+	.image_map_view .view_div{ width:48px; height:48px; }
+	.image_map_view .view_div img{ padding-top: 10px; height: 36px !important; }
+}
+
+@media only screen and (max-width: 1024px) {
+}
+
+@media only screen and (max-width: 992px) {
+	.image_map_view .button_div{ width:100%; float:left; }
+	.image_map_view .map_img_div{ width:100%; float:left; }
+	.image_map_view .transport_div{ width:100%; float:left; padding-top:30px; }
+	.image_map_view .view_div{ /*width:48px; height:48px;*/ float:left; margin-right:10px; }
+}
+
+@media only screen and (max-width: 900px) {
+}
+
+@media only screen and (max-width: 767px){
+	.type_links_main{ padding-left:15%; padding-right:15%; }
+}
+
+@media only screen and (max-width: 680px) {
+	/*.image_map_view .view_div{ width:36px; height:36px; }
+	.image_map_view .view_div img{ padding-top: 8px; height: 28px !important; }*/
+	
+	.detailsMapView .container{ width:100%; padding-left:0px; padding-right:0px; }
+	.detailsMapView .container .button_div{ padding-left:0px; padding-right:0px; }
+	.detailsMapView .container .map_img_div{ padding-left:0px; padding-right:0px; }
+	.detailsMapView .container .transport_div{ padding-left:0px; padding-right:0px; }
+}
+
+@media only screen and (max-width: 640px) {
+	.type_links_main{ padding-left:5%; padding-right:5%; }
+}
+
+@media only screen and (max-width: 520px) {
+	.type_links_main{ padding-left:1%; padding-right:1%; }
+	.map_img_div{ /*padding-left:30px;*/ }
+}
+
+@media only screen and (max-width: 480px) {
+	.type_links_main{ padding-left:0%; padding-right:0%; }
+	.type_links_main .col-md-4{ margin:5px; width:29%; padding-right:5px; padding-left:5px; }
+	.type_links_main .col-md-4 .field_ttl{ font-size:11px; }
+	.type_links_main .col-md-4 .field_val{ font-size:11px; }
+	.booking_btns .custome-btn{ padding: 5px 8px; margin-top: 10px; font-size: 12px; }
+}
+
+@media only screen and (max-width: 440px){
+	
+}
+
+@media only screen and (max-width: 420px){
+	.aminities_main .field_img{ min-width:56px; min-height:70px; }
+	.aminities_main .field_img img{ width:44px; }
+	.transport_div .cab_div img{ max-height:36px; }
+	.map_img_div{ padding-left:20px; }
+	
+	.image_map_view .button_div{ width:100%; float:left; }
+	.image_map_view .map_img_div{ width:100%; float:left; }
+	.image_map_view .transport_div{ width:100%; float:left; /*padding-top:30px;*/ }
+}
+
+@media only screen and (max-width: 380px){
+	.transport_div .cab_div img{ max-height:36px; }
+	.map_img_div{ /*padding-left:30px;*/ }
+	
+	.image_map_view .button_div{ width:100%; float:left; }
+	.image_map_view .map_img_div{ width:100%; float:left; }
+	.image_map_view .transport_div{ width:100%; float:left; /*padding-top:25px;*/ }
+	
+	.type_links_main .col-md-4 .field_ttl{ font-size:10px; }
+	.type_links_main .col-md-4 .field_val{ font-size:10px; }
+}
+
+@media only screen and (max-width: 320px) {
+}
