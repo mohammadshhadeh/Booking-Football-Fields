@@ -35,37 +35,206 @@ if (isset($_GET['booking'])) {
         $hour_end           = $_GET['hour_end'];
         $booking_price      = $_GET['booking_price'];
         
+        // $new_start_num  = (int)$hour_start;
+        // $new_end_num    = (int)$hour_end;
 
-        $hour_start_between1  = ((int)$hour_start + 1) . "PM";
-        $hour_start_between2  = ((int)$hour_start + 1) . "AM";    
-        $hour_start_between3  = ((int)$hour_start - 1) . "PM";
-        $hour_start_between4  = ((int)$hour_start - 1) . "AM";
+        // $new_start_char = preg_replace('/[0-9]+/', '', $hour_start);
+        // $new_end_char   = preg_replace('/[0-9]+/', '', $hour_end);
+
+        // $middle =0;
+
+        // if ($new_start_char == "AM") {
+        //     echo "AM<br>";
+        //     if ( (($new_start_num + 2) == $new_end_num ) || ($new_start_num == 12 && $new_end_num == 2) || ($new_start_num == 11 && $new_end_num == 1) ) {
+        //         echo "dur=2<br>";
+        //         if ($new_start_num == '11') {
+        //             $middle = "12PM";
+        //             echo "$middle";
+        //         }elseif ($new_start_num == '12') {
+        //             $middle = "1AM";
+        //             echo "$middle";
+
+        //         }elseif($new_start_num >= 1 && $new_start_num < 11 ){
+        //             $new_start_num ++;
+        //             $middle = $new_start_num . "AM";
+        //             echo "$middle";
+
+        //         }
+        //     }else{
+        //         echo "dur=1<br>";
+        //         $middle =0;
+        //     }   
+
+        // }elseif ($new_start_char == "PM") {
+        //     echo "PM<br>";
+        //     if ( (($new_start_num + 2) == $new_end_num ) || ($new_start_num == 12 && $new_end_num == 2) || ($new_start_num == 11 && $new_end_num == 1) ) {
+        //         echo "dur=2<br>";
+        //         if ($new_start_num == 11) {
+        //             $middle = "12AM";
+        //             echo "$middle";   
+        //         }elseif ($new_start_num == 12) {
+        //             $middle = "1PM";
+        //             echo "$middle";
+        //         }elseif($new_start_num >= 1 && $new_start_num < 11 ){
+        //             $new_start_num ++;
+        //             $middle = $new_start_num . "PM";
+        //             echo "$middle";
+        //         }
+
+
+        //    }else{
+        //     echo "dur=1";
+        //         $middle =0;
+        //     }
+        // }
 
     
+        
+        // if ($middle = 0 ) {
+        //     $booking    = "SELECT hour_start,hour_end FROM booking WHERE booking_date = '$date' AND 
+        //                 (hour_start = '$hour_start' AND hour_end = '$hour_end' ) AND (hour_start = '$hour_start' OR hour_end = '$hour_end' ) ";
+        // }else{
+        //     $booking    = "SELECT hour_start,hour_end FROM booking WHERE booking_date = '$date' AND( 
+        //                 (hour_start = '$hour_start' OR hour_end = '$hour_end' ) OR (hour_start = '$middle' OR hour_end = '$middle'))";
+        // }
+        $i=0;
+        $book_start_char = preg_replace('/[0-9]+/', '', $hour_start);
+        $book_end_char   = preg_replace('/[0-9]+/', '', $hour_end);
+        $book_start_num  = (int)$hour_start;
+        $book_end_num    = (int)$hour_end;
+        
+
+
+        if ($book_start_char == 'PM' && $book_end_char == 'PM') {  // 12PM - 1 2 3 4 5 6 7 8 9 10 - 11PM
+
+            if ($book_start_num == 12 && $book_end_num == 2) {
+                $booking    = "SELECT hour_start,hour_end FROM booking WHERE booking_date = '$date' AND ((hour_start LIKE '$hour_start') AND (hour_end LIKE '$hour_end')) OR ((hour_start LIKE '11AM') AND (hour_end LIKE '1PM'))";
+                $available  = mysqli_query($conn,$booking);
+                $row5 = mysqli_fetch_assoc($available);
+                if (!empty($row5)) {
+                    $i++;
+                }
+            }else{
+
+            $booking    = "SELECT hour_start,hour_end FROM booking WHERE booking_date = '$date' AND ((hour_start LIKE '%PM') AND (hour_end LIKE '%PM'))";
+            $available  = mysqli_query($conn,$booking);
+           
+            while ($row5 = mysqli_fetch_assoc($available)){
+                
+                $hour_start_num  = (int)$row5['hour_start'];
+                $hour_end_num    = (int)$row5['hour_end'];
+                
+                if( $hour_start_num == $book_start_num && $hour_end_num == $book_end_num ){
+                    $i++;
+                    break;                    
+                }elseif( $book_start_num < $hour_start_num && $book_end_num > $hour_start_num  ) {
+                    $i++;
+                    break;
+                }elseif ($book_start_num < $hour_end_num && $book_end_num > $hour_end_num ) {
+                    $i++;
+                    break;
+                }elseif($book_end_num == $hour_end_num){
+                    $i++;
+                    break;
+                }
+            }    
+        }
+        }elseif($book_start_char == 'AM' && $book_end_char == 'AM') { //12AM - 1 2 3 4 5 6 7 8 9 10 - 11AM
+            
+            if ($book_start_num == 12 && $book_end_num == 2) {
+                $booking    = "SELECT hour_start,hour_end FROM booking WHERE booking_date = '$date' AND ((hour_start LIKE '$hour_start') AND (hour_end LIKE '$hour_end')) OR ((hour_start LIKE '11PM') AND (hour_end LIKE '1AM'))";
+                $available  = mysqli_query($conn,$booking);
+                $row5 = mysqli_fetch_assoc($available);
+                if (!empty($row5)) {
+                    $i++;
+                }
+            }else{
+
+            $booking    = "SELECT hour_start,hour_end FROM booking WHERE booking_date = '$date' AND ((hour_start LIKE '%AM') AND (hour_end LIKE '%AM'))";
+            
+            $available  = mysqli_query($conn,$booking);
+           
+            while ($row5 = mysqli_fetch_assoc($available)){
+                
+                $hour_start_num  = (int)$row5['hour_start'];
+                $hour_end_num    = (int)$row5['hour_end'];
+                
+                if( $hour_start_num == $book_start_num && $hour_end_num == $book_end_num ){
+                    $i++;
+                    break;                    
+                }elseif( $book_start_num < $hour_start_num && $book_end_num > $hour_start_num  ) {
+                    $i++;
+                    break;
+                }elseif ($book_start_num < $hour_end_num && $book_end_num > $hour_end_num ) {
+                    $i++;
+                    break;
+                }elseif($book_end_num == $hour_end_num){
+                    $i++;
+                    break;
+                }
+            }
+           } 
+
+        }elseif($book_start_char == 'AM' && $book_end_char == 'PM'){ // 11AM - 12PM  11AM-1PM
+            $booking    = "SELECT hour_start,hour_end FROM booking WHERE booking_date = '$date' AND ((hour_start LIKE '%AM') AND (hour_end LIKE '%PM') )";
+            $available  = mysqli_query($conn,$booking);
+           
+            while ($row5 = mysqli_fetch_assoc($available)){
+                
+                $hour_start_num  = (int)$row5['hour_start'];
+                $hour_end_num    = (int)$row5['hour_end'];
+                
+                if( $hour_start_num == $book_start_num && $hour_end_num == $book_end_num ){
+                    $i++;
+                    break;                    
+                }elseif($hour_start_num == 11 && $hour_end_num == 12){
+                    if ($book_end_num == 12) {
+                        $i++;
+                    }
+                }elseif ($hour_start_num == 11 && $hour_end_num == 1) {
+                    if ($book_start_num == 12) {
+                        $i++;
+                        break;
+                    }elseif($book_end_num == 12){
+                        $i++;
+                        break;
+                    }
+                }
+            }    
+        }elseif($book_start_char == 'PM' && $book_end_char == 'AM'){ // 11PM - 12AM  11PM-1AM
+            $booking    = "SELECT hour_start,hour_end FROM booking WHERE booking_date = '$date' AND ((hour_start LIKE '%PM') AND (hour_end LIKE '%AM') )";
+            $available  = mysqli_query($conn,$booking);
+           
+            while ($row5 = mysqli_fetch_assoc($available)){
+                
+                $hour_start_num  = (int)$row5['hour_start'];
+                $hour_end_num    = (int)$row5['hour_end'];
+                
+                if( $hour_start_num == $book_start_num && $hour_end_num == $book_end_num ){
+                    $i++;
+                    break;                    
+                }elseif($hour_start_num == 11 && $hour_end_num == 12){
+                    if ($book_end_num == 12) {
+                        $i++;
+                    }
+                }elseif ($hour_start_num == 11 && $hour_end_num == 1) {
+                    if ($book_start_num == 12) {
+                        $i++;
+                        break;
+                    }elseif($book_end_num == 12){
+                        $i++;
+                        break;
+                    }
+                }
+            }
+
+
+        }
+        
+
 
         
-        $booking    = "SELECT hour_start,hour_end FROM booking WHERE booking_date = '$date' AND (hour_start = '$hour_start' AND hour_end = '$hour_end' OR (hour_start ='$hour_start_between1' AND hour_end = '$hour_start_between1' )
-                                        OR (hour_start ='$hour_start_between1' AND hour_end = '$hour_start_between2' )
-                                        OR (hour_start ='$hour_start_between1' AND hour_end = '$hour_start_between3' )
-                                        OR (hour_start ='$hour_start_between1' AND hour_end = '$hour_start_between4' )
-                                        OR (hour_start ='$hour_start_between2' AND hour_end = '$hour_start_between1' )
-                                        OR (hour_start ='$hour_start_between2' AND hour_end = '$hour_start_between2' )
-                                        OR (hour_start ='$hour_start_between2' AND hour_end = '$hour_start_between3' )
-                                        OR (hour_start ='$hour_start_between2' AND hour_end = '$hour_start_between4' )
-                                        OR (hour_start ='$hour_start_between3' AND hour_end = '$hour_start_between1' )
-                                        OR (hour_start ='$hour_start_between3' AND hour_end = '$hour_start_between2' )
-                                        OR (hour_start ='$hour_start_between3' AND hour_end = '$hour_start_between3' )
-                                        OR (hour_start ='$hour_start_between3' AND hour_end = '$hour_start_between4' )
-                                        OR (hour_start ='$hour_start_between4' AND hour_end = '$hour_start_between1' )
-                                        OR (hour_start ='$hour_start_between4' AND hour_end = '$hour_start_between2' )
-                                        OR (hour_start ='$hour_start_between4' AND hour_end = '$hour_start_between3' )
-                                        OR (hour_start ='$hour_start_between4' AND hour_end = '$hour_start_between4' ))";
-
-        $available  = mysqli_query($conn,$booking);
-        $row5       = mysqli_fetch_assoc($available);
-
-        
-        if (empty($row5)) {
+        if ($i == 0) {
             $query10  = "INSERT INTO booking (booking_date ,hour_start,hour_end ,aside_id,customer_id,price)  VALUES ('$date','$hour_start','$hour_end','{$_GET['aside_id']}','{$_SESSION['customer_id']}','$booking_price')";
 
             if($result8 = mysqli_query($conn,$query10)){
