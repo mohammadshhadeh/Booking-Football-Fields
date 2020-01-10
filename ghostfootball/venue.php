@@ -544,7 +544,7 @@ echo
     <div class="container">
         <div class="row pitches_wraper">
           <div class="col-md-12 aminities_main">
-            <div class="col-md-12 book_pitch_title">Book Online</div>
+            <div class="col-md-12 book_pitch_title text-center aminities_title"><h4>Book Online</h4></div>
         </div>
 
 
