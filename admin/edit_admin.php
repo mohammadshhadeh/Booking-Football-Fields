@@ -49,7 +49,7 @@ $row = mysqli_fetch_assoc($result);
 		<div class="row">
 			<div class="col-lg-12">
 				<div class="card">
-					<div class="card-header">Update Admin</div>
+					<div class="card-header"><i class="fas fa-edit"></i> Update Admin</div>
 					<div class="card-body card-block">
 						<form action="#" method="post" class="form" enctype="multipart/form-data">
 							<div class="form-group">
@@ -80,7 +80,7 @@ $row = mysqli_fetch_assoc($result);
 									<input type="file" id="image" name="admin_image" placeholder="Password" class="form-control p-1">
 								</div>
 							</div>
-							<div class="form-actions form-group text-center"><button type="submit" class="btn btn-info btn " name="submit">Update</button></div>
+							<div class="form-actions form-group text-center"><button type="submit" class="btn btn-info btn " name="submit">Update admin</button></div>
 						</form>
 					</div>
 				</div>

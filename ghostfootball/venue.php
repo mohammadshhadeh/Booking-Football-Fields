@@ -108,14 +108,14 @@ if (isset($_GET['booking'])) {
         if ($book_start_char == 'PM' && $book_end_char == 'PM') {  // 12PM - 1 2 3 4 5 6 7 8 9 10 - 11PM
 
             if ($book_start_num == 12 && $book_end_num == 2) {
-                $booking    = "SELECT hour_start,hour_end FROM booking WHERE booking_date = '$date' AND (((hour_start LIKE '$hour_start') AND (hour_end LIKE '$hour_end')) OR ((hour_start LIKE '11AM') AND (hour_end LIKE '1PM')) )";
+                $booking    = "SELECT hour_start,hour_end FROM booking WHERE (aside_id={$_GET['aside_id']} AND booking_date = '$date') AND (((hour_start LIKE '$hour_start') AND (hour_end LIKE '$hour_end')) OR ((hour_start LIKE '11AM') AND (hour_end LIKE '1PM')) )";
                 $available  = mysqli_query($conn,$booking);
                 $row5 = mysqli_fetch_assoc($available);
                 if (!empty($row5)) {
                     $i++;
                 }
             }elseif ($book_start_num == 12 && $book_end_num == 1) {
-                $booking    = "SELECT hour_start,hour_end FROM booking WHERE booking_date = '$date' AND (((hour_start LIKE '$hour_start') AND (hour_end LIKE '$hour_end')) OR ((hour_start LIKE '11AM') AND (hour_end LIKE '1PM')))";
+                $booking    = "SELECT hour_start,hour_end FROM booking WHERE (aside_id={$_GET['aside_id']} AND booking_date = '$date') AND (((hour_start LIKE '$hour_start') AND (hour_end LIKE '$hour_end')) OR ((hour_start LIKE '11AM') AND (hour_end LIKE '1PM')))";
                 $available  = mysqli_query($conn,$booking);
                 $row5 = mysqli_fetch_assoc($available);
                 if (!empty($row5)) {
@@ -123,7 +123,7 @@ if (isset($_GET['booking'])) {
                 }
             }else{
 
-            $booking    = "SELECT hour_start,hour_end FROM booking WHERE booking_date = '$date' AND (((hour_start LIKE '%PM') AND (hour_end LIKE '%M')))";
+            $booking    = "SELECT hour_start,hour_end FROM booking WHERE (aside_id={$_GET['aside_id']} AND booking_date = '$date') AND (((hour_start LIKE '%PM') AND (hour_end LIKE '%M')))";
             $available  = mysqli_query($conn,$booking);
            
             while ($row5 = mysqli_fetch_assoc($available)){
@@ -149,14 +149,14 @@ if (isset($_GET['booking'])) {
         }elseif($book_start_char == 'AM' && $book_end_char == 'AM') { //12AM - 1 2 3 4 5 6 7 8 9 10 - 11AM
             
             if ($book_start_num == 12 && $book_end_num == 2) {
-                $booking    = "SELECT hour_start,hour_end FROM booking WHERE booking_date = '$date' AND (((hour_start LIKE '$hour_start') AND (hour_end LIKE '$hour_end')) OR ((hour_start LIKE '11PM') AND (hour_end LIKE '1AM')))";
+                $booking    = "SELECT hour_start,hour_end FROM booking WHERE (aside_id={$_GET['aside_id']} AND booking_date = '$date') AND (((hour_start LIKE '$hour_start') AND (hour_end LIKE '$hour_end')) OR ((hour_start LIKE '11PM') AND (hour_end LIKE '1AM')))";
                 $available  = mysqli_query($conn,$booking);
                 $row5 = mysqli_fetch_assoc($available);
                 if (!empty($row5)) {
                     $i++;
                 }
             }elseif ($book_start_num == 12 && $book_end_num == 1) {
-                $booking    = "SELECT hour_start,hour_end FROM booking WHERE booking_date = '$date' AND (((hour_start LIKE '$hour_start') AND (hour_end LIKE '$hour_end')) OR ((hour_start LIKE '11PM') AND (hour_end LIKE '1AM')))";
+                $booking    = "SELECT hour_start,hour_end FROM booking WHERE (aside_id={$_GET['aside_id']} AND booking_date = '$date') AND (((hour_start LIKE '$hour_start') AND (hour_end LIKE '$hour_end')) OR ((hour_start LIKE '11PM') AND (hour_end LIKE '1AM')))";
                 $available  = mysqli_query($conn,$booking);
                 $row5 = mysqli_fetch_assoc($available);
                 if (!empty($row5)) {
@@ -164,7 +164,7 @@ if (isset($_GET['booking'])) {
                 }
             }else{
 
-            $booking    = "SELECT hour_start,hour_end FROM booking WHERE booking_date = '$date' AND (((hour_start LIKE '%AM') AND (hour_end LIKE '%M')))";
+            $booking    = "SELECT hour_start,hour_end FROM booking WHERE (aside_id={$_GET['aside_id']} AND booking_date = '$date') AND (((hour_start LIKE '%AM') AND (hour_end LIKE '%M')))";
             
             $available  = mysqli_query($conn,$booking);
            
@@ -192,21 +192,21 @@ if (isset($_GET['booking'])) {
         }elseif($book_start_char == 'AM' && $book_end_char == 'PM'){ // 11AM - 12PM  11AM-1PM
             
             if ($book_start_num == 11 && $book_end_num == 1) {
-                $booking    = "SELECT hour_start,hour_end FROM booking WHERE booking_date = '$date' AND (((hour_start LIKE '$hour_start') AND (hour_end LIKE '$hour_end')) OR ((hour_start LIKE '12PM') AND (hour_end LIKE '%PM')) OR ((hour_start LIKE '10AM') AND (hour_end LIKE '%M')))";
+                $booking    = "SELECT hour_start,hour_end FROM booking WHERE (aside_id={$_GET['aside_id']} AND booking_date = '$date') AND (((hour_start LIKE '$hour_start') AND (hour_end LIKE '$hour_end')) OR ((hour_start LIKE '12PM') AND (hour_end LIKE '%PM')) OR ((hour_start LIKE '10AM') AND (hour_end LIKE '%M')))";
                 $available  = mysqli_query($conn,$booking);
                 $row5 = mysqli_fetch_assoc($available);
                 if (!empty($row5)) {
                     $i++;
                 }
             }elseif ($book_start_num == 11 && $book_end_num == 12) {
-                $booking    = "SELECT hour_start,hour_end FROM booking WHERE booking_date = '$date' AND (((hour_start LIKE '$hour_start') AND (hour_end LIKE '$hour_end')) OR ((hour_start LIKE '11AM') AND (hour_end LIKE '1PM')) OR ((hour_start LIKE '10AM') AND (hour_end LIKE '%M')))";
+                $booking    = "SELECT hour_start,hour_end FROM booking WHERE (aside_id={$_GET['aside_id']} AND booking_date = '$date') AND (((hour_start LIKE '$hour_start') AND (hour_end LIKE '$hour_end')) OR ((hour_start LIKE '11AM') AND (hour_end LIKE '1PM')) OR ((hour_start LIKE '10AM') AND (hour_end LIKE '%M')))";
                 $available  = mysqli_query($conn,$booking);
                 $row5 = mysqli_fetch_assoc($available);
                 if (!empty($row5)) {
                     $i++;
                 }
             }else{
-            $booking    = "SELECT hour_start,hour_end FROM booking WHERE booking_date = '$date' AND (((hour_start LIKE '%AM') AND (hour_end LIKE '%M')))";
+            $booking    = "SELECT hour_start,hour_end FROM booking WHERE (aside_id={$_GET['aside_id']} AND booking_date = '$date') AND (((hour_start LIKE '%AM') AND (hour_end LIKE '%M')))";
             $available  = mysqli_query($conn,$booking);
            
             while ($row5 = mysqli_fetch_assoc($available)){
@@ -240,21 +240,21 @@ if (isset($_GET['booking'])) {
 
 
             if ($book_start_num == 11 && $book_end_num == 1) {
-                $booking    = "SELECT hour_start,hour_end FROM booking WHERE booking_date = '$date' AND (((hour_start LIKE '$hour_start') AND (hour_end LIKE '$hour_end')) OR ((hour_start LIKE '12AM') AND (hour_end LIKE '%AM')) OR ((hour_start LIKE '10PM') AND (hour_end LIKE '%M')))";
+                $booking    = "SELECT hour_start,hour_end FROM booking WHERE (aside_id={$_GET['aside_id']} AND booking_date = '$date') AND (((hour_start LIKE '$hour_start') AND (hour_end LIKE '$hour_end')) OR ((hour_start LIKE '12AM') AND (hour_end LIKE '%AM')) OR ((hour_start LIKE '10PM') AND (hour_end LIKE '%M')))";
                 $available  = mysqli_query($conn,$booking);
                 $row5 = mysqli_fetch_assoc($available);
                 if (!empty($row5)) {
                     $i++;
                 }
             }elseif ($book_start_num == 11 && $book_end_num == 12) {
-                $booking    = "SELECT hour_start,hour_end FROM booking WHERE booking_date = '$date' AND (((hour_start LIKE '$hour_start') AND (hour_end LIKE '$hour_end')) OR ((hour_start LIKE '11PM') AND (hour_end LIKE '1AM')) OR ((hour_start LIKE '10PM') AND (hour_end LIKE '%   M')))";
+                $booking    = "SELECT hour_start,hour_end FROM booking WHERE (aside_id={$_GET['aside_id']} AND booking_date = '$date') AND (((hour_start LIKE '$hour_start') AND (hour_end LIKE '$hour_end')) OR ((hour_start LIKE '11PM') AND (hour_end LIKE '1AM')) OR ((hour_start LIKE '10PM') AND (hour_end LIKE '%   M')))";
                 $available  = mysqli_query($conn,$booking);
                 $row5 = mysqli_fetch_assoc($available);
                 if (!empty($row5)) {
                     $i++;
                 }
             }else{
-            $booking    = "SELECT hour_start,hour_end FROM booking WHERE booking_date = '$date' AND (((hour_start LIKE '%PM') AND (hour_end LIKE '%M')))";
+            $booking    = "SELECT hour_start,hour_end FROM booking WHERE (aside_id={$_GET['aside_id']} AND booking_date = '$date') AND (((hour_start LIKE '%PM') AND (hour_end LIKE '%M')))";
             $available  = mysqli_query($conn,$booking);
            
             while ($row5 = mysqli_fetch_assoc($available)){

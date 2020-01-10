@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Generation Time: Jan 06, 2020 at 06:47 PM
+-- Generation Time: Jan 10, 2020 at 04:37 PM
 -- Server version: 10.4.10-MariaDB
 -- PHP Version: 7.3.12
 
@@ -97,17 +97,24 @@ CREATE TABLE IF NOT EXISTS `booking` (
   `aside_id` int(3) NOT NULL,
   `customer_id` int(3) NOT NULL,
   PRIMARY KEY (`booking_id`)
-) ENGINE=MyISAM AUTO_INCREMENT=110 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=185 DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `booking`
 --
 
 INSERT INTO `booking` (`booking_id`, `price`, `booking_date`, `hour_start`, `hour_end`, `aside_id`, `customer_id`) VALUES
-(109, 24, '2020-01-06', '6PM', '8PM', 2, 1),
-(108, 12, '2020-01-06', '8PM', '9PM', 2, 1),
-(107, 12, '2020-01-06', '11PM', '12AM', 2, 1),
-(106, 24, '2020-01-06', '1AM', '3AM', 2, 1);
+(184, 15, '2020-01-09', '11PM', '12AM', 8, 1),
+(183, 30, '2020-01-09', '9PM', '11PM', 8, 1),
+(182, 30, '2020-01-09', '12AM', '2AM', 8, 1),
+(180, 15, '2020-01-09', '6PM', '7PM', 8, 1),
+(181, 30, '2020-01-09', '7PM', '9PM', 8, 1),
+(179, 15, '2020-01-09', '5PM', '6PM', 8, 1),
+(178, 30, '2020-01-07', '12PM', '2PM', 1, 1),
+(177, 30, '2020-01-07', '11PM', '1AM', 1, 1),
+(176, 24, '2020-01-07', '8AM', '10AM', 2, 1),
+(174, 24, '2020-01-07', '10AM', '12PM', 2, 1),
+(175, 12, '2020-01-07', '8PM', '9PM', 2, 1);
 
 -- --------------------------------------------------------
 
@@ -123,25 +130,19 @@ CREATE TABLE IF NOT EXISTS `customer` (
   `identical_number` bigint(20) NOT NULL,
   `password` varchar(20) NOT NULL,
   `phone` varchar(15) NOT NULL,
+  `cover_image` varchar(250) NOT NULL,
+  `profile_image` varchar(250) NOT NULL,
+  `birthday` varchar(250) NOT NULL,
   PRIMARY KEY (`customer_id`)
-) ENGINE=MyISAM AUTO_INCREMENT=30 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=49 DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `customer`
 --
 
-INSERT INTO `customer` (`customer_id`, `name`, `email`, `identical_number`, `password`, `phone`) VALUES
-(1, 'Mohammad Shehadeh', 'a@a.a', 11211515, '123456789', '0789972842'),
-(20, 'asdasd', 'moh@s.c', 54545, '123554584848512', '545454545454'),
-(22, 'tfyguhij', 'asdasd@fsdf.asd', 5151515, '12354584', '51515155'),
-(23, 'sadasd sada', 'mohammasd@asdas.com', 25615611, 'sdasbdjnk5121', '15454151'),
-(24, 'sadasd sada', 'mohammasd@asdas.com', 256156116, 'sdasbdjnk5121', '15454151'),
-(21, 'Mohammad Zaid Sh', 'Mohammad@gmail.com', 123456789, 'Mohammad0789972842', '0789972842'),
-(25, 'sadasd sada', 'mohammasd@asdas.com', 256156151, 'sdasbdjnk5121', '15454151'),
-(26, 'sadasd sada', 'mohammasd@asdas.com', 25615611651, 'sdasbdjnk5121', '15454151'),
-(27, 'sadasd sada', 'mohammasd@asdas.com', 2561561454541651, 'sdasbdjnk5121', '15454151'),
-(28, 'sadasd sada', 'mohammasd@asdas.com', 256156777711651, 'sdasbdjnk5121', '15454151'),
-(29, 'sadasd  sada', 'mohammasd@asdas.com', 25615611651, 'sdasbdjnk5121', '15454151');
+INSERT INTO `customer` (`customer_id`, `name`, `email`, `identical_number`, `password`, `phone`, `cover_image`, `profile_image`, `birthday`) VALUES
+(1, 'Mohammad Shehadeh', 'a@a.a', 9971056554, '123456789', '0789972842', '940.jpg', '1ccf68df-d54d-46c4-b040-04b3156f27c1.jpg', '1997-11-12'),
+(48, 'mohammad', 'm@M2.m', 12345678, '15s1ad5as', '115451', 'default/bg-cover.jpg', 'default/people.png', '0000-00-00');
 
 -- --------------------------------------------------------
 

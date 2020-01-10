@@ -32,7 +32,7 @@ if (isset($_POST['submit'])) {
 <div class="content">
     <div class="animated fadeIn">
         <div class="row">
-            <div class="col-lg-10 m-auto">
+            <div class="col-lg-12 m-auto">
                 <div class="card">
                     <div class="card-header">
                         <strong>Add Pitch</strong> Images
@@ -90,7 +90,7 @@ if (isset($_POST['submit'])) {
                     </div>
                 </div>
             </div>
-            <div class="col-lg-10 m-auto">
+            <div class="col-lg-12 m-auto">
                     <div class="card">
                         <div class="card-header">
                             <strong class="card-title">Pitches Details</strong>
@@ -119,8 +119,8 @@ if (isset($_POST['submit'])) {
                                             echo "<td>{$row['aside_name']}</td>";
                                             echo "<td>{$row['aside_number']}</td>";
                                             echo "<td>{$row['pitch_name']}</td>";
-                                            echo "<td><a href='edit_images.php?image_id={$row['image_id']}&pitch_id={$row['pitch_id']}&aside_id={$row['aside_id']}&aside_number={$row['aside_number']}&aside_name={$row['aside_name']}' class='badge badge-complete bg-warning'>Edit</a></td>";
-                                            echo "<td><a href='delete_images.php?image_id={$row['image_id']}' class='badge badge-complete bg-danger'>Delete</a></td>";
+                                            echo "<td><a href='edit_images.php?image_id={$row['image_id']}&pitch_id={$row['pitch_id']}&aside_id={$row['aside_id']}&aside_number={$row['aside_number']}&aside_name={$row['aside_name']}' class='btn badge-complete text-white bg-warning'>Edit</a></td>";
+                                            echo "<td><a href='delete_images.php?image_id={$row['image_id']}' class='btn badge-complete text-white bg-danger'>Delete</a></td>";
                                             echo "<tr>";
 
                                         }

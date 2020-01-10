@@ -37,7 +37,7 @@ if (isset($_POST['submit'])) {
 		<div class="row">
 			<div class="col-lg-11 m-auto">
 				<div class="card">
-					<div class="card-header">Add New Admin</div>
+					<div class="card-header"><i class="fas fa-user"></i> Add New Admin</div>
 					<div class="card-body card-block">
 						<form action="#" method="post" class="form" enctype="multipart/form-data">
 							<div class="form-group">
@@ -68,7 +68,7 @@ if (isset($_POST['submit'])) {
 									<input type="file" id="image" name="admin_image" placeholder="Password" class="form-control p-1">
 								</div>
 							</div>
-							<div class="form-actions form-group text-center"><button type="submit" class="btn btn-info btn " name="submit">Submit</button></div>
+							<div class="form-actions form-group text-center"><button type="submit" class="btn btn-info btn " name="submit">Add New Admin</button></div>
 						</form>
 					</div>
 				</div>

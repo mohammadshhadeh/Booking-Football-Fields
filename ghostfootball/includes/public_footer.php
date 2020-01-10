@@ -209,15 +209,26 @@ echo'
 </div>
 ';
   }
-    ?>
-
-
+    
+if (isset($_SESSION['customer_id'])) {
+  echo '
 <div class="remodal" id="start_joining_popup" data-remodal-id="start_joining_popup" role="dialog" aria-labelledby="modal1Title" aria-describedby="modal1Desc" data-remodal-options="closeOnOutsideClick: false, closeOnEscape:false">
   <div class="col-md-12 fl100 pad0" >
+    <a data-remodal-action="cancel" class="remodal-cancel close_popup_jian2">X</a>
+    <div style="color: #ed1a3b;"><h4 class="popup_ttl">Update your profile a before you start.<br></h4></div>
+    <div class="col-md-12 modal_terms signup_wel_txt">&nbsp;</div>
+    <div style="color: #ed1a3b;"><h4 class="popup_ttl">See you on the pitch!</h4></div>
+    <div class="col-md-12 check_main">
+      <p><a href="profile-Update.php" class="btn btn-primary check_btn" id="check_btn">Update Now!</a></p>
+    </div>
     <div class="col-md-12 modal_terms signup_wel_txt">&nbsp;</div>
     <div class="col-md-12 fl100 pad0 mar10" style="margin-bottom: 2rem;" ><hr /></div>
   </div>
-</div>
+</div>';
+}
+
+?>
+
 </body>
 
 <script type="text/javascript" src="js/bootstrap-datetimepicker.js" charset="UTF-8"></script>

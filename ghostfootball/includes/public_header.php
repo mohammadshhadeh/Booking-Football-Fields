@@ -9,14 +9,14 @@ if(isset($_POST['sign_up'])){
   $phone    = $_POST['phone_number'];
   $password = $_POST['password']; 
 
-  $query   = "INSERT INTO customer (name, email, identical_number, phone, password) VALUES ('$name','$email', '$id', '$phone', '$password')";
+  $query   = "INSERT INTO customer (name, email, identical_number, phone, password,cover_image,profile_image,birthday) VALUES ('$name','$email', '$id', '$phone', '$password','default/bg-cover.jpg','default/people.png','0000-00-00')";
 
   if(mysqli_query($conn,$query)){
       $query = "SELECT * FROM customer Where name='$name'";
       $result = mysqli_query($conn,$query);
       $row   = mysqli_fetch_assoc($result);
       $_SESSION['customer_id']= $row['customer_id'];
-
+      echo "<script> window.top.location='index.php#start_joining_popup'</script>";
   }
 
 }
@@ -141,7 +141,7 @@ if(isset($_POST['login'])){
                   $query = "SELECT * FROM customer Where customer_id={$_SESSION['customer_id']}";
                   $result = mysqli_query($conn,$query);
                   $row   = mysqli_fetch_assoc($result);
-                echo "<li class='dropdown'><a href='' class='user-logon' type='button' data-toggle='dropdown' aria-expanded='false'>{$row['name']} <img src='https://sanktgeorghecklingen.de/wp-content/uploads/2018/02/people.png'></a>  
+                echo "<li class='dropdown'><a href='' class='user-logon' type='button' data-toggle='dropdown' aria-expanded='false'>{$row['name']} <img src='upload/{$row['profile_image']}'></a>  
                 <ul class='dropdown-menu'>
                 <li>
                 <a href='profile.php'>Profile</a>

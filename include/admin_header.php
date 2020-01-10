@@ -77,6 +77,9 @@
     #cellPaiChart{
         height: 160px;
     }
+    .right-panel .navbar-brand {
+    width: 185px!important;
+    }
 
 </style>
 </head>
@@ -128,8 +131,9 @@
         <nav class="navbar navbar-expand-sm navbar-default">
             <div id="main-menu" class="main-menu collapse navbar-collapse ">
                 <ul class="nav navbar-nav">
+                    <li class="menu-title">Dashboard</li>
                     <li>
-                        <a href="index.php"><i class="menu-icon fa fa-laptop"></i>Home </a>
+                        <a href="index.php"><i class="menu-icon fa fa-laptop"></i>Home</a>
                     </li>
                     <li class="menu-title">Admin</li>
                     <li>
@@ -165,12 +169,15 @@
                 <div class="header-menu">
 
                     <div class="user-area dropdown float-right">
+
                         <a href="#" class="dropdown-toggle active" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             <?php
                             $query  = "SELECT * FROM admin WHERE admin_id = {$_SESSION['capstone_id']}";
                             $result = mysqli_query($conn,$query);
                             $row    =mysqli_fetch_assoc($result);
+                            echo "{$row['admin_name']} &nbsp";
                             echo "<img class='user-avatar rounded-circle' src='upload/{$row['admin_image']}' alt='User Avatar'>";
+
 
                             ?>
                         </a>

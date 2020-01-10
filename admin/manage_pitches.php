@@ -44,7 +44,7 @@ if (isset($_POST['submit'])) {
             <div class="col-lg-12 m-auto">
                 <div class="card">
                     <div class="card-header">
-                        <strong>Add Pitch</strong> Details
+                        <strong><i class="fas fa-futbol"></i> Add Pitch</strong> Details
                     </div>
                     <div class="card-body card-block">
                         <form action="#" method="post" enctype="multipart/form-data" class="form-horizontal">

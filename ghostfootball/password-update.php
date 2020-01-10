@@ -27,7 +27,13 @@ if (isset($_POST['submit'])) {
 
 <section class="innerPage">
     <div class="page-header">
-        <div class="container">Update Password</div>
+        <div class="container">
+            <ul class="header-link">
+                <li><a href="profile-update.php">Profile</a></li>
+                <li><a href="Password-update.php" class="active">Password</a></li>
+                <li><a href="logout.php">Log out</a></li>
+            </ul>
+        </div>
     </div>
     <div class="contentMain">
         <div class="container">
