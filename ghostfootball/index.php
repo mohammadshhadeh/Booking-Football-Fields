@@ -1,6 +1,7 @@
 <?php
 include_once('includes/public_header.php');
 ?>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
 
 <style type="text/css">
   .disabled{
@@ -70,7 +71,7 @@ include_once('includes/public_header.php');
   <span class="second" >WELCOME!</span>
 </div>
 
-<section class="banner-video" style="background: #f4f4f4;" >
+<section class="banner-video " style="background: #f4f4f4;" >
 
  <div class="banner-video-new " >
   <div class="container" >
@@ -90,7 +91,7 @@ include_once('includes/public_header.php');
       <div class="banner_what" >What do you want to do today?</div>
     </div>
 
-    <div class="col-md-12 col-xs-12 banner_icons" >
+    <div class="col-md-12 col-xs-12 banner_icons animated rollIn" >
 
      <div class="col-md-12 col-xs-12 banner_top_icon" >
       <div class="icon_main_title" >Individuals</div>

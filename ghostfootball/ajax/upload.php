@@ -1,6 +1,6 @@
 <?php
 //upload.php
-include ('includes/connection.php');
+include ('../includes/connection.php');
 session_start();
 if($_FILES["file"]["name"] != '')
 {
@@ -8,14 +8,14 @@ $query   = "SELECT * FROM customer WHERE customer_id = {$_SESSION['customer_id']
 $result  = mysqli_query($conn,$query);
 $row     = mysqli_fetch_assoc($result);
 if ($row['cover_image'] != "default/bg-cover.jpg") {
-	unlink("upload/{$row['cover_image']}");
+	unlink("../upload/{$row['cover_image']}");
 }
 
  $test 		= explode('.', $_FILES["file"]["name"]);
  $ext  		= end($test);
  $name 		= rand(100, 999) . '.' . $ext;
  $tmp_name 	= $_FILES["file"]["tmp_name"];
- $path 		= "upload/";  
+ $path 		= "../upload/";  
 
  move_uploaded_file($tmp_name, $path.$name);
 
