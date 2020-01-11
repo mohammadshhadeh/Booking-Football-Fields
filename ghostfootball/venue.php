@@ -34,69 +34,7 @@ if (isset($_GET['booking'])) {
         $hour_start         = $_GET['hour_start'];
         $hour_end           = $_GET['hour_end'];
         $booking_price      = $_GET['booking_price'];
-        
-        // $new_start_num  = (int)$hour_start;
-        // $new_end_num    = (int)$hour_end;
-
-        // $new_start_char = preg_replace('/[0-9]+/', '', $hour_start);
-        // $new_end_char   = preg_replace('/[0-9]+/', '', $hour_end);
-
-        // $middle =0;
-
-        // if ($new_start_char == "AM") {
-        //     echo "AM<br>";
-        //     if ( (($new_start_num + 2) == $new_end_num ) || ($new_start_num == 12 && $new_end_num == 2) || ($new_start_num == 11 && $new_end_num == 1) ) {
-        //         echo "dur=2<br>";
-        //         if ($new_start_num == '11') {
-        //             $middle = "12PM";
-        //             echo "$middle";
-        //         }elseif ($new_start_num == '12') {
-        //             $middle = "1AM";
-        //             echo "$middle";
-
-        //         }elseif($new_start_num >= 1 && $new_start_num < 11 ){
-        //             $new_start_num ++;
-        //             $middle = $new_start_num . "AM";
-        //             echo "$middle";
-
-        //         }
-        //     }else{
-        //         echo "dur=1<br>";
-        //         $middle =0;
-        //     }   
-
-        // }elseif ($new_start_char == "PM") {
-        //     echo "PM<br>";
-        //     if ( (($new_start_num + 2) == $new_end_num ) || ($new_start_num == 12 && $new_end_num == 2) || ($new_start_num == 11 && $new_end_num == 1) ) {
-        //         echo "dur=2<br>";
-        //         if ($new_start_num == 11) {
-        //             $middle = "12AM";
-        //             echo "$middle";   
-        //         }elseif ($new_start_num == 12) {
-        //             $middle = "1PM";
-        //             echo "$middle";
-        //         }elseif($new_start_num >= 1 && $new_start_num < 11 ){
-        //             $new_start_num ++;
-        //             $middle = $new_start_num . "PM";
-        //             echo "$middle";
-        //         }
-
-
-        //    }else{
-        //     echo "dur=1";
-        //         $middle =0;
-        //     }
-        // }
-
-    
-        
-        // if ($middle = 0 ) {
-        //     $booking    = "SELECT hour_start,hour_end FROM booking WHERE booking_date = '$date' AND 
-        //                 (hour_start = '$hour_start' AND hour_end = '$hour_end' ) AND (hour_start = '$hour_start' OR hour_end = '$hour_end' ) ";
-        // }else{
-        //     $booking    = "SELECT hour_start,hour_end FROM booking WHERE booking_date = '$date' AND( 
-        //                 (hour_start = '$hour_start' OR hour_end = '$hour_end' ) OR (hour_start = '$middle' OR hour_end = '$middle'))";
-        // }
+       
         $i=0;
         $book_start_char = preg_replace('/[0-9]+/', '', $hour_start);
         $book_end_char   = preg_replace('/[0-9]+/', '', $hour_end);
@@ -363,6 +301,13 @@ if (isset($_GET['booking'])) {
         
     }
 
+    @media only screen and (max-width: 500px) {
+        .form-control.game_dt_field.updaate{
+            width: 150px;
+        }
+        
+    }
+
 </style>
 
 <script type="text/javascript">
@@ -452,8 +397,8 @@ if (isset($_GET['booking'])) {
 <?php
 echo 
 "<section class='full_venue_dtl_banner venue_page_banner'>
-    <a href='#photo' class='menu_popup' style='margin-top:0px;padding:0px;position:absolute;top:20px;left:20px;'>
-        <i class='fas fa-images' style='font-size:30px;color:#ed1a3b; '></i>
+    <a href='#photo'  style='margin-top:0px;padding:0px;position:absolute;top:20px;left:20px;'>
+        <i class='fas fa-images' style='font-size:30px;color:#ed1a3b;'></i>
     </a>
     <img src='images/blank.png' style='background-image:url(../admin/upload/{$row['aside_image']})!important; background-size: cover;background-position: center center;
 background-repeat: no-repeat; width: 100%; height:400px;' class='venue_banner_img' >
@@ -471,6 +416,10 @@ echo
 
 ";
 ?>
+
+
+
+
 <section class="detailsMain " id="ride_type" style="padding-bottom:0px;" >
     <div class="container">
         <div class="row type_links">
@@ -555,7 +504,7 @@ echo
                     <div class="col-md-4 col-sm-6 col-xs-6 sl-date w190">
                         <div  name="selcDate" class="input-group date form_datepicker search" dataDate="" data-Date-format="yyyy-mm-dd" data-link-field="dtp_input2" data-link-format="yyyy-mm-dd" >
                                 <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
-                            <input  class="form-control game_dt_field" size="16" type="text" placeholder="Date" id="date" name="date" value="<?php echo $today; ?>">
+                            <input  class="form-control game_dt_field updaate" size="16" type="text" placeholder="Date" id="date" name="date" value="<?php echo $today; ?>">
                             <div class="games_reset_date">X</div>
 
                         </div>
