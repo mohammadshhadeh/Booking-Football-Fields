@@ -211,7 +211,7 @@ $today  = $year . '-' . $month . '-' . $day;
               if(jQuery.inArray(ext, ['gif','png','jpg','jpeg']) == -1) 
                 {
                     alert("Invalid Image File");
-                }
+                }else{
               var oFReader = new FileReader();
               oFReader.readAsDataURL(document.getElementById("file").files[0]);
               var f = document.getElementById("file").files[0];
@@ -236,6 +236,7 @@ $today  = $year . '-' . $month . '-' . $day;
                 }
                });
               }
+             } 
          });
     });
 </script>
