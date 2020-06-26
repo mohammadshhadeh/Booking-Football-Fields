@@ -1,49 +1,39 @@
 <?php
-include ('../include/admin_header.php');
+	include ('../include/admin_header.php');
 
+	if (isset($_POST['submit'])) {
+		// fetch data
+		$email 	     = $_POST['admin_email'];
+		$password    = $_POST['admin_password'];
+		$name 	     = $_POST['admin_name'];
+		// Esiablish connection
+		$admin_image = $_FILES['admin_image']['name'];
+		$tmp_name    = $_FILES['admin_image']['tmp_name'];
+		$path 		 = "upload/";
 
-if (isset($_POST['submit'])) {
-	// fetch data
-	$email 	     = $_POST['admin_email'];
-	$password    = $_POST['admin_password'];
-	$name 	     = $_POST['admin_name'];
-	// Esiablish connection
-	$admin_image = $_FILES['admin_image']['name'];
-	$tmp_name    = $_FILES['admin_image']['tmp_name'];
-	$path 		 = "upload/";
+		move_uploaded_file($tmp_name, $path.$admin_image);
+		if ($_FILES['admin_image']['error'] === 0) {
+			$query  = "SELECT * FROM admin WHERE admin_name = '{$_POST['admin_name']}'" ;
+			$result = mysqli_query($conn, $query);
+			$row    = mysqli_fetch_assoc($result);
 
-	move_uploaded_file($tmp_name, $path.$admin_image);
-	if ($_FILES['admin_image']['error']==0) {
-		
-		$query  = "SELECT * FROM admin WHERE admin_name = '{$_POST['admin_name']}'" ;
-	
-		$result = mysqli_query($conn, $query);
+			unlink("upload/{$row['admin_image']}");
+			$query = "UPDATE admin SET  admin_email='$email' ,admin_password='$password' ,admin_name='$name', admin_image='$admin_image' WHERE admin_id={$_GET['admin_id']}" ;
+		} else {
+			$query = "UPDATE admin SET  admin_email='$email' ,admin_password='$password' ,admin_name='$name' WHERE admin_id={$_GET['admin_id']}" ;
+		}
 
-		$row    = mysqli_fetch_assoc($result);
-
-		unlink("upload/{$row['admin_image']}");
-		
-		$query = "UPDATE admin SET  admin_email='$email' ,admin_password='$password' ,admin_name='$name', admin_image='$admin_image' WHERE admin_id={$_GET['admin_id']}" ;
-	}else{
-	$query = "UPDATE admin SET  admin_email='$email' ,admin_password='$password' ,admin_name='$name' WHERE admin_id={$_GET['admin_id']}" ;
+		// Applied query
+		if(mysqli_query($conn,$query)){
+			echo "<script> window.top.location='manage_admin.php'</script>";
+		} /* Back to manage admin page */
 	}
-	// Applied query
-	if(mysqli_query($conn,$query)){
-		echo "<script> window.top.location='manage_admin.php'</script>";
-	} /* Back to manage admin page */
 
-}
-
-//fetch data from edit
-
-$query  = " SELECT * FROM admin WHERE admin_id={$_GET['admin_id']}";
-$result = mysqli_query($conn, $query); 
-$row = mysqli_fetch_assoc($result);
-
-
+	//fetch data from edit
+	$query  = " SELECT * FROM admin WHERE admin_id={$_GET['admin_id']}";
+	$result = mysqli_query($conn, $query);
+	$row = mysqli_fetch_assoc($result);
 ?>
-
-
 <div class="content">
 	<div class="animated fadeIn">
 		<div class="row">
@@ -86,9 +76,8 @@ $row = mysqli_fetch_assoc($result);
 				</div>
 			</div>
 		</div>
-	</div><!-- .animated -->
+	</div>
 </div>
-
 <?php
 	include ('../include/admin_footer.php');
 ?>

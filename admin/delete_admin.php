@@ -1,14 +1,13 @@
 <?php
-include('../include/connection.php');
+	include('../include/connection.php');
 
+	$query  = "SELECT * FROM admin WHERE admin_id= {$_GET['admin_id']}";
+	$result = mysqli_query($conn, $query);
+	$row    = mysqli_fetch_assoc($result);
 
-$query  = "SELECT * FROM admin WHERE admin_id= {$_GET['admin_id']}";
-$result = mysqli_query($conn, $query);
-$row    = mysqli_fetch_assoc($result);
+	unlink("upload/{$row['admin_image']}");
 
-unlink("upload/{$row['admin_image']}");
+	$query  = "DELETE FROM admin WHERE admin_id = {$_GET['admin_id']} ";
+	$result = mysqli_query($conn, $query);
 
-$query  = "DELETE FROM admin WHERE admin_id = {$_GET['admin_id']} ";
-$result = mysqli_query($conn, $query);
-
-header("Location: manage_admin.php"); /* back to manage admin page */
+	header("Location: manage_admin.php"); /* back to manage admin page */

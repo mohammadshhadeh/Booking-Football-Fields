@@ -1,37 +1,26 @@
 <?php
-include ('../include/admin_header.php');
+	include ('../include/admin_header.php');
 
+	if (isset($_POST['submit'])) {
+		// fetch data
+		$email 	     = $_POST['admin_email'];
+		$password    = $_POST['admin_password'];
+		$name 	     = $_POST['admin_name'];
+		// Esiablish connection
+		$admin_image = $_FILES['admin_image']['name'];
+		$tmp_name    = $_FILES['admin_image']['tmp_name'];
+		$path 		 = "upload/";
 
-if (isset($_POST['submit'])) {
-	// fetch data
-	$email 	     = $_POST['admin_email'];
-	$password    = $_POST['admin_password'];
-	$name 	     = $_POST['admin_name'];
-	// Esiablish connection
-	$admin_image = $_FILES['admin_image']['name'];
-	$tmp_name    = $_FILES['admin_image']['tmp_name'];
-	$path 		 = "upload/";
+		move_uploaded_file($tmp_name, $path.$admin_image);
 
-	move_uploaded_file($tmp_name, $path.$admin_image);
+		$query = "INSERT INTO admin (admin_name, admin_email, admin_password, admin_image) VALUES ('$name','$email','$password','$admin_image')";
 
-
-	$query = "INSERT INTO admin (admin_name, admin_email, admin_password, admin_image) VALUES ('$name','$email','$password','$admin_image')";
-
-	// Applied query
-
-	if(mysqli_query($conn,$query)){
-		echo "<script> window.top.location='manage_admin.php'</script>";
+		// Applied query
+		if (mysqli_query($conn,$query)) {
+			echo "<script> window.top.location='manage_admin.php'</script>";
+		}
 	}
-
-
-}
-
-
-
-
-
 ?>
-
 <div class="content">
 	<div class="animated fadeIn">
 		<div class="row">
@@ -73,9 +62,7 @@ if (isset($_POST['submit'])) {
 					</div>
 				</div>
 			</div>
-
 		</div>
-
 		<div class="row">
 			<div class="col-lg-11 m-auto">
 				<div class="card">
@@ -98,30 +85,29 @@ if (isset($_POST['submit'])) {
 								<?php
 									$query  = " SELECT * FROM admin";
 									$result = mysqli_query($conn, $query);
-									while ($row = mysqli_fetch_assoc($result)) {
-										echo "<tr>";
-										echo "<td class='serial'>{$row['admin_id']}</td>";
-										echo "<td class='avatar'>
+									while ($row = mysqli_fetch_assoc($result)) : ?>
+										<tr>
+											<td class='serial'><?php echo $row['admin_id'] ?></td>";
+											<td class='avatar'>
 												<div class='round-img'>
-													<img class='rounded-circle' src='upload/{$row['admin_image']}' alt=''>
+													<img class='rounded-circle' src='upload/<?php echo $row['admin_image']; ?>' alt=''>
 												</div>
-											</td>";
-										echo "<td>{$row['admin_name']}</td>";
-										echo "<td>{$row['admin_email']}</td>";
-										echo "<td><a href='edit_admin.php?admin_id={$row['admin_id']}' class='badge badge-complete bg-warning'>Edit</a></td>";
-										echo "<td><a href='delete_admin.php?admin_id={$row['admin_id']}' class='badge badge-complete bg-danger'>Delete</a></td>";
-										echo "<tr>";
-									}
+											</td>
+											<td><?php echo $row['admin_name'];?></td>
+											<td><?php echo $row['admin_email']; ?></td>
+											<td><a href='edit_admin.php?admin_id=<?php echo $row['admin_id']; ?>' class='badge badge-complete bg-warning'>Edit</a></td>
+											<td><a href='delete_admin.php?admin_id=<?php echo $row['admin_id']; ?>' class='badge badge-complete bg-danger'>Delete</a></td>
+										</tr>
+									<?php endwhile;
 								?>
 							</tbody>
 						</table>
-					</div> <!-- /.table-stats -->
+					</div>
 				</div>
 			</div>
 		</div>
-	</div><!-- .animated -->
+	</div>
 </div>
-
 <?php
-include ('../include/admin_footer.php');
+	include ('../include/admin_footer.php');
 ?>
