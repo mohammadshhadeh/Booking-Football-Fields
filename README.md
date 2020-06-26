@@ -1,11 +1,9 @@
 # Capstone Project
 
 
-###### 
-Booking Football Fields
-Mohammad Shehadeh
-Fullstack Development in PHP
-######
+###### Booking Football Fields
+###### Mohammad Shehadeh
+###### Fullstack Development in PHP
 
 # Booking Football Fields
 This project focuses on solving the problem of booking football fields. The aim of the work is to 
