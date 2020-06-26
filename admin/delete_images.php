@@ -1,8 +1,7 @@
 <?php
 include('../include/connection.php');
 
-
-$query  = "SELECT * FROM images WHERE image_id= {$_GET['image_id']}";
+$query  = " SELECT * FROM images WHERE image_id= {$_GET['image_id']} ";
 $result = mysqli_query($conn, $query);
 $row    = mysqli_fetch_assoc($result);
 

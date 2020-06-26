@@ -1,43 +1,28 @@
 <?php
-include ('../include/admin_header.php');
+    include ('../include/admin_header.php');
 
+    if (isset($_POST['submit'])) {
+        // fetch data
+        $pitch_name       = $_POST['pitch_name'];
+        $pitch_address    = $_POST['pitch_address'];
+        $seven_aside      = $_POST['seven_aside'];
+        $six_aside        = $_POST['six_aside'];
+        $five_aside       = $_POST['five_aside'];
+        $description      = $_POST['description'];
 
-if (isset($_POST['submit'])) {
-    // fetch data
-    $pitch_name       = $_POST['pitch_name'];
-    $pitch_address    = $_POST['pitch_address'];
-    $seven_aside      = $_POST['seven_aside'];
-    $six_aside        = $_POST['six_aside'];
-    $five_aside       = $_POST['five_aside'];
-    $description      = $_POST['description'];
+        $pitch_image = $_FILES['pitch_image']['name'];
+        $tmp_name    = $_FILES['pitch_image']['tmp_name'];
+        $path        = "upload/";
 
+        move_uploaded_file($tmp_name, $path.$pitch_image);
 
-    $pitch_image = $_FILES['pitch_image']['name'];
-    $tmp_name    = $_FILES['pitch_image']['tmp_name'];
-    $path        = "upload/";
-
-    move_uploaded_file($tmp_name, $path.$pitch_image);
-
-    
-    $query = "INSERT INTO pitch (pitch_name, pitch_address, five_aside,six_aside, seven_aside, description,pitch_image) VALUES ('$pitch_name','$pitch_address','$seven_aside','$six_aside', '$five_aside','$description','$pitch_image')";
-
-
-    // Applied query
-
-    if(mysqli_query($conn,$query)){
-        echo "<script> window.top.location='manage_pitches.php'</script>";
+        $query = "INSERT INTO pitch (pitch_name, pitch_address, five_aside,six_aside, seven_aside, description,pitch_image) VALUES ('$pitch_name','$pitch_address','$seven_aside','$six_aside', '$five_aside','$description','$pitch_image')";
+        // Applied query
+        if(mysqli_query($conn,$query)){
+            echo "<script> window.top.location='manage_pitches.php'</script>";
+        }
     }
-
-
-}
-
-
-
-
-
 ?>
-
-
 <div class="content">
     <div class="animated fadeIn">
         <div class="row">
@@ -87,9 +72,7 @@ if (isset($_POST['submit'])) {
                             <div class="form-actions form-group text-right"><button type="submit" class="btn btn-info btn " name="submit">Submit</button></div>    
                         </form>
                     </div>
-
                 </div>
-
             </div>
             <div class="col-lg-12 m-auto">
                     <div class="card">
@@ -100,50 +83,45 @@ if (isset($_POST['submit'])) {
                             <table class="table">
                                 <thead class="thead-dark">
                                     <tr>
-                                      <th scope="col">#</th>
-                                      <th scope="col">Name</th>
-                                      <th scope="col">Address</th>
-                                      <th scope="col">#5 Aside</th>
-                                      <th scope="col">#6 Aside</th>
-                                      <th scope="col">#7 Aside</th>
-                                      <th scope="col">Description</th>
-                                      <th scope="col">Pitch Image</th>
-                                      <th scope="col">Edit</th>
-                                      <th scope="col">Delete</th>
-                                  </tr>
-                              </thead>
-                              <tbody>
-                                <tr>
+                                        <th scope="col">#</th>
+                                        <th scope="col">Name</th>
+                                        <th scope="col">Address</th>
+                                        <th scope="col">#5 Aside</th>
+                                        <th scope="col">#6 Aside</th>
+                                        <th scope="col">#7 Aside</th>
+                                        <th scope="col">Description</th>
+                                        <th scope="col">Pitch Image</th>
+                                        <th scope="col">Edit</th>
+                                        <th scope="col">Delete</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
                                     <?php
                                         $query  = "SELECT * FROM pitch";
                                         $result = mysqli_query($conn, $query);
-                                        while ($row=mysqli_fetch_assoc($result)) {
-                                            echo "<th scope='row'>{$row['pitch_id']}</th>";
-                                            echo "<td>{$row['pitch_name']}</td>";
-                                            echo "<td>{$row['pitch_address']}</td>";
-                                            echo "<td>{$row['five_aside']}</td>";
-                                            echo "<td>{$row['six_aside']}</td>";
-                                            echo "<td>{$row['seven_aside']}</td>";
-                                            echo "<td>{$row['description']}</td>";
-                                            echo "<td><img src='upload/{$row['pitch_image']}'></td>";
-                                            echo "<td><a href='edit_pitch.php?pitch_id={$row['pitch_id']}' class='badge badge-complete bg-warning'>Edit</a></td>";
-                                            echo "<td><a href='delete_pitch.php?pitch_id={$row['pitch_id']}' class='badge badge-complete bg-danger'>Delete</a></td>";
-                                            echo "<tr>";
-
-                                        }
+                                        while ($row=mysqli_fetch_assoc($result)) : ?>
+                                            <tr>
+                                                <th scope='row'><?php echo $row['pitch_id']?></th>
+                                                <td><?php echo $row['pitch_name']?></td>
+                                                <td><?php echo $row['pitch_address']?></td>
+                                                <td><?php echo $row['five_aside']?></td>
+                                                <td><?php echo $row['six_aside']?></td>
+                                                <td><?php echo $row['seven_aside']?></td>
+                                                <td><?php echo $row['description']?></td>
+                                                <td><img src='upload/<?php echo $row['pitch_image']?>'></td>
+                                                <td><a href='edit_pitch.php?pitch_id=<?php echo $row['pitch_id'] ?>' class='badge badge-complete bg-warning'>Edit</a></td>
+                                                <td><a href='delete_pitch.php?pitch_id=<?php echo $row['pitch_id'] ?>' class='badge badge-complete bg-danger'>Delete</a></td>
+                                            </tr>
+                                        <?php endwhile;
                                     ?>
-                                    
-                                </tr>
                             </tbody>
                         </table>
-
                     </div>
                 </div>
             </div>
         </div>
     </div><!-- .animated -->
 </div><!-- .content -->
-
 <?php
-include ('../include/admin_footer.php');
+    include ('../include/admin_footer.php');
 ?>
