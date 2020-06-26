@@ -1,3 +1,3 @@
-# Capstone-Project
+# Capstone Project
 
 Football Reservation System
