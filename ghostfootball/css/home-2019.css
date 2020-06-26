@@ -141,9 +141,7 @@ section.banner-video{ /*height: auto;*/ height: 475px; }
 	.more-football-sectoin-2019{ padding-bottom: 70px; }
 	.more-football-sectoin-2019 .football_content{ margin-top: 0px; margin-bottom: 35px; }
 	.promo-section{ padding-top:90px; }
-	
 	.more-football-sectoin-2019 .football_content{ padding-left:15px; padding-right: 15px; margin-top: 0px; margin-bottom: 35px; }
-	
 }
 
 @media only screen and (max-width: 991px) {
@@ -157,9 +155,7 @@ section.banner-video{ /*height: auto;*/ height: 475px; }
 	.about-ss-sectoin-2019{ padding-top: 90px; }
 	.more-football-sectoin-2019{ padding-bottom: 90px; }
 	.promo-section{ padding-top: 60px; }
-	
 	.tab-content .tab-pane .pane_content_right .pane_content_footer{ margin-top: 45%; }
-	
 	section.banner-video{ height: 625px; }
 }
 
@@ -198,17 +194,13 @@ section.banner-video{ /*height: auto;*/ height: 475px; }
 	.banner_icons .banner_bottom_icon{ padding-left:0px; padding-right: 0px; }
 	.banner_icons .banner_bottom_icon .col-md-6{ padding-left:5px; padding-right: 5px; }
 	.banner_icons .banner_bottom_icon_main{ padding-left: 10px; padding-right: 10px; }
-	.banner_icons .banner_top_icon{ padding-left:0px; padding-right: 0px; }	
+	.banner_icons .banner_top_icon{ padding-left:0px; padding-right: 0px; }
 	.banner_icons .icon_tab .icon_img img{ width: 42px; height: 42px; }
 	.banner_icons .icon_tab .icon_label{ font-size: 14px; line-height: 17px; word-wrap: break-word; }
-	
 	.tab-content .tab-pane .pane_content_right .pane_content_footer{ margin-top: 63%; }
-
 	.banner_details .banner_hello{ font-size: 21px; line-height: 26px; }
 	.banner_details .banner_what{ font-size: 14px; line-height: 17px; }
-	
-	.tab-content .tab-pane .pane_content_right .pane_content_footer{ margin-top: 67%; }	
-	
+	.tab-content .tab-pane .pane_content_right .pane_content_footer{ margin-top: 67%; }
 	.about-ss-sectoin-2019{ padding-top: 30px; }
 	.tab-content .tab-pane .pane_content_right .pane_content_header span{ font-size: 14px; }
 	.tab-content .tab-pane .pane_content_right .pane_content_header{ font-size:18px; }
@@ -223,33 +215,24 @@ section.banner-video{ /*height: auto;*/ height: 475px; }
 	.tabs-left > .nav-tabs > li > a{ padding: 5px; }
 	.tabs-left > .nav-tabs > li > a img{ width: 21px; height: 21px; }
 	.tab-content .tab-pane .pane_content_right .pane_content_footer{ margin-top: 75%; }
-	
 	.banner_top_icon .icon_tab{ padding: 10px 5px; }
 	.banner_icons .icon_tab .icon_img img{ width: 42px; height: 42px; }
-	.banner_icons .icon_tab .icon_label{ font-size: 12px; line-height: 15px; }	
-
+	.banner_icons .icon_tab .icon_label{ font-size: 12px; line-height: 15px; }
 	.home_app_section .on_demand_description .ondemand_hello{ font-size: 14px; }
 	.home_app_section .on_demand_description .on_demand_what{ font-size: 13px; }
-	
-	
 	.banner-video-new .container{ padding-left: 10px; padding-right: 10px; }
 	.banner_icons .banner_bottom_icon_main{ padding-left: 10px; padding-right: 10px; }
-	
 }
 
 @media only screen and (max-width: 380px) {
 	.banner_details .banner_what{ font-size: 12px; line-height: 15px; }
-	
-		
 	.tab-content .tab-pane .pane_content_right .pane_content_footer{ margin-top: 83%; }
 }
 
 @media only screen and (max-width: 360px) {
 	.banner_details .banner_what{ font-size: 12px; line-height: 15px; }
 	.banner_icons .icon_tab .icon_img img{ width: 42px; height: 42px; }
-	.banner_icons .icon_tab .icon_label{ font-size: 12px; line-height: 15px; }	
-	
+	.banner_icons .icon_tab .icon_label{ font-size: 12px; line-height: 15px; }
 	.tab-content .tab-pane .pane_content_right .pane_content_footer{ margin-top: 88%; }
-	
 	.banner_top_icon .icon_tab{ padding: 10px 1px; }
 }

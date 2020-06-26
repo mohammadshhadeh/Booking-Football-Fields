@@ -3,13 +3,10 @@
 ?>
 <!-- Filter-Slider Style -->
 <link rel="stylesheet" type="text/css" href="css/filter-slider.css">
-
 <!-- Header -->
 <div class="early_bird" >
     <span class="second" >Search for aside?</span>
 </div>
-
-
 <!-- Filter -->
 <section class="listingMain listbg">
     <div id='myurl'>
@@ -40,23 +37,17 @@
                                     ?>
                                 </select>
                             </div>
-
-                            
                             <label class="mt20" ></label>
-
                             <div class="col-md-8 col-sm-2 col-xs-8 pitch_type_select gm-type make_50 mt10 w190">
                                 <label class="mt20" ></label>
-
                                 <label class="pitch_type_lbl submit_label" >&nbsp</label>
                                 <input type="submit" class="btn btn-primary inline_dsp search_btn" id ="submit_filter_btn" value="Search" name="submit" style="background-color:#f99e1a; border-color:#f99e1a; " />
                             </div>
                         </div>
-
                     </form>
                 </div>
                 <div class="clearfix"></div>
                 <div class="clearfix"></div>
-
                 <!-- Filter Slider :: START -->
                 <div class="filter_slider" >
                     <div class="col-md-12 col-sm-12 col-xs-12" style="text-align: left;
@@ -64,7 +55,7 @@
                     <h2 style="margin-top: 0px; font-size:28px;
                     ">Find a Pitch</h2>
                     <div class="col-md-12 col-sm-12 col-xs-12 filter_slider_main" >
-                      <div class="owl-carousel">
+                    <div class="owl-carousel">
                         <?php
                             $result = mysqli_query($conn,$query);
                             while ($row = mysqli_fetch_assoc($result)){
@@ -94,9 +85,6 @@
             </div>
         </div>                
         <!-- Filter Slider :: OVER -->
-
-
-
         <!-- Filter Slider :: START -->
         <script src="js/owl.carousel-min.js"></script>
         <script language="javascript" >
