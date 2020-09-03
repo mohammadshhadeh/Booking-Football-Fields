@@ -1,6 +1,8 @@
 <?php
-	include('connection.php');
 	session_start();
+
+	include('connection.php');
+
 	if (!isset($_SESSION['capstone_id'])) {
 		header("location:login.php");
 		exit();
@@ -159,11 +161,11 @@
 				<div class="user-area dropdown float-right">
 					<a href="#" class="dropdown-toggle active" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 						<?php
-						$query  = "SELECT * FROM admin WHERE admin_id = {$_SESSION['capstone_id']}";
-						$result = mysqli_query($conn,$query);
-						$row    =mysqli_fetch_assoc($result);
-						echo "{$row['admin_name']} &nbsp";
-						echo "<img class='user-avatar rounded-circle' src='upload/{$row['admin_image']}' alt='User Avatar'>";
+							$query  = "SELECT * FROM admin WHERE admin_id = {$_SESSION['capstone_id']}";
+							$result = mysqli_query($conn,$query);
+							$row    = mysqli_fetch_assoc($result);
+							echo "{$row['admin_name']} ";
+							echo "<img class='user-avatar rounded-circle' src='upload/{$row['admin_image']}' alt='User Avatar'>";
 						?>
 					</a>
 					<div class="user-menu dropdown-menu">
